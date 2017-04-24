@@ -40,7 +40,7 @@
     </table>
     
     <form action="process.php" method="post">
-      <input type="text" name="fName" value="Your Name Here" onfocus="myFunction(this)" id="fname" onblur="myFunction()">
+      <input type="text" name="fName" value="Your Name Here" onfocus="myFunction(this)">
       <input type="date" name="birthday">
       <input type="email" name="email" value="Your Email Address Here" onfocus="myFunction(this)">
       <input type="tel" name="number" value="Your Number Here" onfocus="myFunction(this)">
@@ -65,13 +65,8 @@
     
 <script>
   function myFunction(x) {
-    x.style.background = "lightblue";
+    x.style.background = "azure";
 }
-  function myFunction() {
-    var x = document.getElementById("fname");
-    x.style = x.style.backgroundColor = "azure";
-}
-
 </script>
   </body>
     
