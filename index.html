@@ -92,10 +92,9 @@
   var inputValue1 = document.getElementById("value1");
   var inputValue2 = document.getElementById("value2");
   
-  var val1 = inputValue1.value;
-  var val2 = inputValue2.value;
-  
   btnMultiply.addEventListener('click', function(e) {
+    var val1 = inputValue1.value;
+    var val2 = inputValue2.value;
     alert(val1+ "X "+val2+ " = "+(val1*val2));
   });
   
