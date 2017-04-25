@@ -78,7 +78,7 @@
     x.style.background = "azure";
 };
 
-  document.body.children[1].children[2].addEventListener("click", function(e) {
+  document.body.children[1].children[2].addEventListener('click', function(e) {
     if(document.body.children[1].children[0].style.display != "none") {
        document.body.children[1].children[0].style.display = "none";
        document.body.children[1].children[1].style.display = "block";
@@ -87,6 +87,16 @@
       document.body.children[1].children[0].style.display = "block";
     }
   });
+  
+  var btnMultiply = getElementById("multiply");
+  var inputValue1 = getElementById("value1");
+  var inputValue2 = getElementById("value2");
+  
+  btnMultiply.addEventListener('click', function(e) {
+    var val1 = inputValue1.value;
+    var val2 = inputValue2.value;
+  });
+  
 </script>
   </body>
     
