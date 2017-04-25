@@ -77,7 +77,16 @@
   function myFunction(x) {
     x.style.background = "azure";
 };
-
+  
+  document.body.children[1].children[2].addEventListener('click', function(e) {
+    if(document.body.children[1].children[0].style.display != "none") {
+       document.body.children[1].children[0].style.display = "none";
+       document.body.children[1].children[1].style.display = "block";
+    } else {
+      document.body.children[1].children[1].style.display = "none";
+      document.body.children[1].children[0].style.display = "block";
+    }
+  });
   
   var btnMultiply = document.getElementById("multiply");
   var inputValue1 = document.getElementById("value1");
@@ -86,7 +95,7 @@
   btnMultiply.addEventListener('click', function(e) {
     var val1 = inputValue1.value;
     var val2 = inputValue2.value;
-    alert(val1+ "X "+val2+ " = "+(val1*val2))
+    alert(val1+ "X "+val2+ " = "+(val1*val2));
   });
   
 </script>
