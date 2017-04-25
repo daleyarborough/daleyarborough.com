@@ -67,6 +67,11 @@
   function myFunction(x) {
     x.style.background = "azure";
 }
+  document.body.addEventListener("click", function(e) {
+    console.log("you clicked in the page's body");
+    alert("Clicked in the body\nX: " + e.clientX+" \nY:"+ e.clientY);
+    alert(e);
+    
 </script>
   </body>
     
