@@ -95,6 +95,9 @@
   btnMultiply.addEventListener('click', function(e){
     var val1 = inputValue1.value;
     var val2 = inputValue2.value;
+    if (isNAN(val1) || isNAN(val2) {
+        alert("Whoops! At least one value is not a number!");
+  } else {
     alert(val1*val2);
   });
   
