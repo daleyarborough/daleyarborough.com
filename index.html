@@ -101,18 +101,14 @@
     alert(val1*val2);
   }});
   
-  inputValue1.addEventListener('keyup', function(e) {
-    if(isNaN(inputValue1.value)) {
-      inputValue1.style.border="2px solid red";
-    } else {
-    inputValue1.style.border="";
-    }});
-  inputValue2.addEventListener('keyup', function(e) {
-    if(isNaN(inputValue2.value)) {
-      inputValue2.style.border="2px solid red";
-    } else {
-    inputValue2.style.border="";
-    }});
+  function validateNumber() {
+  if(isNaN(this.value)) {
+  this.style.border="2px solid red";
+  } else {
+  this.style.border="";
+  }
+    inputValue1.addEventLister('keyup', validateNumber);
+    inputValue1.addEventLister('keyup', validateNumber);
   
 </script>
   </body>
