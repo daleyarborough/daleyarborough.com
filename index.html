@@ -103,8 +103,9 @@
   
   inputValue1.addEventListener('keyup', function(e) {
     if(isNaN(inputValue1.value)) {
-      alert("numbers only");
-    
+      inputValue1.style.border="2px solid red";
+    } else {
+    inputValue1.style.border="";
     }});
   
 </script>
