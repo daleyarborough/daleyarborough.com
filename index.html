@@ -97,14 +97,17 @@
     var val2 = inputValue2.value;
     if (isNaN(val1) || isNaN(val2)) {
         alert("Whoops! At least one value is not a number!");
+      val1.value = "0" && val2.value = "0";
   } else {
     alert(val1*val2);
   }});
   
   inputValue1.addEventListener('keyup', function(e) {
     if(isNaN(inputValue1.value)) {
-      alert("One of those characters is not a number, please enter a valid number");
-    }});
+      inputValue1.style.border = "2px solid red";
+    } else {
+    inputValue1.style.border = "";
+    });
   
 </script>
   </body>
