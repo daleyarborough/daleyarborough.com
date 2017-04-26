@@ -101,6 +101,11 @@
     alert(val1*val2);
   }});
   
+  inputValue1.addEventListener('keyup', function(e) {
+    if(isNaN(inputValue1.value)) {
+      alert("One of those characters is not a number, please enter a valid number");
+    }});
+  
 </script>
   </body>
     
