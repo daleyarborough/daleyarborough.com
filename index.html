@@ -71,6 +71,8 @@
     <input id="value1" type="text" value="5">
     <input id="value2" type="text" value="6">
     <button id="multiply">Multiply</button>
+    <hr>
+    <p id="result"></p>
 
     
 <script>
@@ -89,12 +91,10 @@
   });
   
   var btnMultiply = document.getElementById("multiply");
- 
-  <p id="result"></p>
   var inputValue1 = document.getElementById("value1");
   var inputValue2 = document.getElementById("value2");
   
-  var result=document.getElementById('result')
+  var result = document.getElementById("result")
   btnMultiply.addEventListener('click', function(e){
     var val1 = inputValue1.value;
     var val2 = inputValue2.value;
