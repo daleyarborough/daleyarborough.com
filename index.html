@@ -96,7 +96,8 @@
     var val1 = inputValue1.value;
     var val2 = inputValue2.value;
     if (isNaN(val1) || isNaN(val2)) {
-        alert("Whoops! At least one value is not a number!");
+        result.innerHTML="Whoops! At least one value is not a number!";
+        result.style.color="red";
   } else {
     result.innerHTML=(val1*val2);
     result.style.color="green";
