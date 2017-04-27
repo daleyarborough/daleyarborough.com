@@ -98,7 +98,8 @@
     if (isNaN(val1) || isNaN(val2)) {
         alert("Whoops! At least one value is not a number!");
   } else {
-    alert(val1*val2);
+    result.innerHTML=(val1*val2);
+    result.style.color="green";
   }});
   
   function validateNumber() {
