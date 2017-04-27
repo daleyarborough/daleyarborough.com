@@ -85,10 +85,11 @@
     major: "Computer Information Systems"
   };
   studentMeJSON = JSON.stringify(studentMe);
+  studentMeBinary = JSON.parse(studentMeJSON);
   
   function myFunction(x) {
     x.style.background = "azure";
-};
+  };
   
   document.body.children[1].children[2].addEventListener('click', function(e) {
     if(document.body.children[1].children[0].style.display != "none") {
@@ -105,13 +106,13 @@
   var inputValue2 = document.getElementById("value2");
   
   var result = document.getElementById("result")
-  btnMultiply.addEventListener('click', function(e){
+  btnMultiply.addEventListener('click', function(e) {
     var val1 = inputValue1.value;
     var val2 = inputValue2.value;
     if (isNaN(val1) || isNaN(val2)) {
         result.innerHTML="Whoops! At least one value is not a number!";
         result.style.color="red";
-  } else {
+    } else {
     result.innerHTML=(val1*val2);
     result.style.color="green";
   }});
