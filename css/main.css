@@ -1,4 +1,7 @@
 #header { 
-  background-color: darkgoldenrod;
   height: 75px;
+  background-color: darkgoldenrod;
+/*   color */ 
+  color: azure;
+ 
 }
