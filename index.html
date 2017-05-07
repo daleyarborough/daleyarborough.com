@@ -159,8 +159,15 @@
   }}
     inputValue1.addEventListener('keyup', validateNumber);
     inputValue2.addEventListener('keyup', validateNumber);
-  
+
 </script>
+    <script>
+       var mymap = L.map('mapdiv')
+        mymap.setView([19.4, -99.1, 11]);
+  
+       var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+        mymap.addLayer(backgroundLayer);
+    </script>
     
 </body>
     
