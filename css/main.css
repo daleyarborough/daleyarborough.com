@@ -1,3 +1,7 @@
+.body { 
+   overflow: scroll;  
+}
+
 #header { 
   height: 75px;
   background-color: darkgoldenrod;
