@@ -2,5 +2,9 @@
   height: 75px;
   background-color: darkgoldenrod;
 /*   color */ 
+}
 
+#mapdiv { 
+  height: 75px;
+  background-color: salmon;
 }
