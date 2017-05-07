@@ -8,3 +8,13 @@
   height: 75px;
   background-color: salmon;
 }
+
+#side-panel { 
+  height: 75px;
+  background-color: beige;
+}
+
+footer { 
+  height: 75px;
+  background-color: darkgrey;
+}
