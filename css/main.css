@@ -9,12 +9,12 @@
   background-color: salmon;
 }
 
-#side-panel { 
+#side_panel { 
   height: 75px;
   background-color: beige;
 }
 
-footer { 
+#footer { 
   height: 75px;
   background-color: darkgrey;
 }
