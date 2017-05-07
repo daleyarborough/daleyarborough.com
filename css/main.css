@@ -8,10 +8,16 @@
 /*   color */ 
 }
 
+#container {
+  height: auto;
+   background-color:salmon;
+}
+/*
 #mapdiv { 
   height: auto;
   background-color: salmon;
 }
+*/
 
 #side_panel { 
   height: 850px;
