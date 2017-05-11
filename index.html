@@ -106,50 +106,6 @@
           <h3 id="map_coords" class="text-center">Latitude: 19.4 Longitude: -99.1 Zoom Level: 11</h3>
         </div>
         </div>
-        
-       
-      
-    <!-- Google Maps Street View -->
-
-<style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map, #pano {
-        float: left;
-        height: 100%;
-        width: 45%;
-      }
-    </style>
- 
- 
-    <div id="map"></div>
-    <div id="pano"></div>
-    <script>
-
-      function initialize() {
-        var fenway = {lat: 39.692931, lng: -75.110783};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: fenway,
-          zoom: 14
-        });
-        var panorama = new google.maps.StreetViewPanorama(
-            document.getElementById('pano'), {
-              position: fenway,
-              pov: {
-                heading: 34,
-                pitch: 10
-              }
-            });
-        map.setStreetView(panorama);
-      }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXVUcbmKGmoE8Sr5xOIF9-E54fjh47dOI&callback=initialize">
-    </script>
-
 
     
 <script> 
