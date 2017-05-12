@@ -162,8 +162,9 @@
 </script>
     
     <script>
-       var mymap = L.map('mapdiv')
-        mymap.setView([35.829374, -79.103417], 15);
+       var map = L.map('map', {
+          center: [51.505, -0.09], zoom: 13
+        });
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
 
