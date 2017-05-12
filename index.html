@@ -194,6 +194,8 @@
        var theGreenhouse = L.marker([36.217920, -81.684790]);
       theGreenhouse.addTo(mymap);
       
+      theGreenhouse.bindPopup("The Greenhouse");
+      
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
 
