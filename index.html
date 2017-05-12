@@ -190,13 +190,13 @@
         });
       
        var theGreenhouse = L.marker([36.217920, -81.684790]).addTo(mymap).bindPopup("<h5 class='text-center'>The Greenhouse</h5><a href='https://www.facebook.com/pages/The-Greenhouse/136260526422575' target='blank'><img src='http://www.downtownboonenc.com/default/assets/Image/Greenhouse.jpg' width='200px' height='200px'</a>");
-      
-      $("#zoomToGreenHouse").click(function() {
-                mymap.setView([36.217920, -81.684790]), 17);
-      });
-      
+
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
+      
+      $("#zoomToGreenHouse").click(function() {
+                mymap.setView([36.217920, -81.684790)], 17);
+      }); 
 
     </script>
     
