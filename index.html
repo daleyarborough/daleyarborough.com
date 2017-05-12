@@ -190,6 +190,10 @@
        var mymap = L.map('mapdiv', {
           center: [51.505, -0.09], zoom: 13
         });
+      
+       var theGreenhouse = L.marker([51, -0.1]);
+      theGreenhouse.addTo(mymap);
+      
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
 
