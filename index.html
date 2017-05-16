@@ -225,6 +225,8 @@
        var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
       });
+      
+      var geoJsonLayer = new L.GeoJSON.AJAX('attractions.geojson').addToMap(mymap);
     </script>
     
 </body>
