@@ -211,7 +211,10 @@
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
       
-      
+      mymap.on('mousemove', function(e) {
+       var str = "Lattitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+.e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
+        $("#map_coords").html(str);
+      });
 
     </script>
     
