@@ -221,12 +221,7 @@
     $("#zoomToGreenHouse").click(function() {
       mymap.setView([36.217920, -81.684790], 17);
     });
-      
-      mymap.on('mousemove', function(e) {
-       var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
-        $("#map_coords").html(str);
-      });
-      
+
       var geoJsonLayer = new L.GeoJSON.AJAX('attractions.geojson', {pointToLayer: function(feature, latlng) {
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
         str += "a href='"+feature.properties.web+"' target='blank'>";
@@ -235,6 +230,14 @@
         return L.marker(latlng).bindPopup(str);
         }});
       geojsonLayer.addTo(mymap);
+      
+      /* Event handlers last*/
+      
+      mymap.on('mousemove', function(e) {
+       var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
+        $("#map_coords").html(str);
+      });
+      
     </script>
     
 </body>
