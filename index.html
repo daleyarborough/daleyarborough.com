@@ -222,7 +222,7 @@
       mymap.setView([36.217920, -81.684790], 17);
     });
 
-      var geoJsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
         str += "a href='"+feature.properties.web+"' target='blank'>";
         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
