@@ -19,6 +19,10 @@
     
     
     <style>
+      #notMain > form > label {
+        font-weight: bold;
+      }
+      
       #header {
         height: 75px;
         background-color: darkgoldenrod;
@@ -83,7 +87,7 @@
       </tr>
     </table>
     </div>
-    
+    <section id="notMain">
     <div class="col-md-12 form-control">
     <form action="process.php" method="post">
       <label for="fName">First Name</label>
@@ -98,8 +102,11 @@
       </select>
       
       <input type="submit" name="submit" value="Submit Button">
-     </form>
-     </div>
+      </form>
+      </div>
+      
+    </section>
+    <br/>
     
     
     <div class="divOne" id="div1">
