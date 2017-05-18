@@ -264,9 +264,11 @@
         str += "a href='"+feature.properties.web+"' target='blank'>";
         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
         str += "</a>";
-        return L.marker(latlng).bindPopup(str);
+        return L.marker(latlng)L.marker([36.217920, -81.684790]).bindPopup(str).addTo(mymap);
+        
+        /*return L.marker(latlng).bindPopup(str);
         }});
-      geojsonLayer.addTo(mymap);
+      geojsonLayer.addTo(mymap); */
 
     </script>
     
