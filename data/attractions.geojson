@@ -2,12 +2,12 @@
   "type": "Feature",
     "properties":{
       "id":3,
-        "name": "Charlotte Park",
+        "name": "The Greenhouse",
           "image": "http://www.cats.org.uk/uploads/images/pages/photo_latest14.jpg",
             "web": "https://rooibus.com/image"
     },
       "geometry":{
         "type": "Point",
-          "coordinates": [36.217920, -81.684790]
+          "coordinates": [36.210951, -81.677705]
       }
 }
