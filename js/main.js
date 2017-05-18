@@ -1,6 +1,5 @@
+"use sctrict";
 
-  "use sctrict";
-
-var resultList = jQuery("#resultList");
+var resultList = $("#resultList");
 resultList.text("This is from jQuery");
 
