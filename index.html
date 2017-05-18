@@ -304,9 +304,9 @@
       
       var toggleButton = $("#toggleButton").on("click", function() {
         resultList.toggle(500);
-        if (toggleButton.text == "Hide") {
+        if (toggleButton.text() == "Hide") 
           toggleButton.text("Show");
-        } else toggleButton.text("Hide");
+         else toggleButton.text("Hide");
       });
     </script>
 </body>
