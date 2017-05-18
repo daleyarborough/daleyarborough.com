@@ -299,6 +299,8 @@
     </script>
     
     <script>
+      $(document).ready(function() { 
+      
       var resultList = $("#resultList");
       resultList.text("This is from jQuery");
       
@@ -307,7 +309,9 @@
         if (toggleButton.text() == "Hide") 
           toggleButton.text("Show");
          else toggleButton.text("Hide");
+        });
       });
+        
     </script>
 </body>
     
