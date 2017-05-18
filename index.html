@@ -258,7 +258,7 @@
         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
         str += "</a>";
         return L.marker(latlng).bindPopup(str);
-        return L.marker(latlng);
+        return L.marker;
         }});
       geojsonLayer.addTo(mymap);
       
