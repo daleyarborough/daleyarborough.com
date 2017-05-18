@@ -251,24 +251,23 @@
     $("#zoomToGreenHouse").click(function() {
       mymap.setView([36.217920, -81.684790], 17);
     });
-
-      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<h3>"+feature.properties.name+"</h3><hr>";
-        str += "a href='"+feature.properties.web+"' target='blank'>";
-        str += "<img src='img/"+feature.properties.image+"' width='200px'>";
-        str += "</a>";
-        return L.marker(latlng).bindPopup(str);
-        return L.marker;
-        }});
-      geojsonLayer.addTo(mymap);
       
-      /* Event handlers last*/
+       /* Event handlers last*/
       
       mymap.on('mousemove', function(e) {
        var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
       });
        
+      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var str = "<h3>"+feature.properties.name+"</h3><hr>";
+        str += "a href='"+feature.properties.web+"' target='blank'>";
+        str += "<img src='img/"+feature.properties.image+"' width='200px'>";
+        str += "</a>";
+        return L.marker(latlng).bindPopup(str);
+        }});
+      geojsonLayer.addTo(mymap);
+
     </script>
     
     <script>
