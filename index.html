@@ -139,7 +139,19 @@
       <h5 style="font-weight:bold; font-type:;">Second Day; Pluralsight</h5>
       <ul>
         <li>Relative Selectors (ex. #notMain > form > li {font-weight: bold;}</li>
-        <li></li>
+        <li>Closures: Allows access to outer variables within inner scopes:
+          <ul>
+            <li>Regardless of Lifetime</li>
+            <li>Ex. <br>
+            var x = 1;
+              function someFunction() {
+                var y = x;
+              }
+            someFunction();
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
     
     <div class="col-md-6 well" class="form-control">
