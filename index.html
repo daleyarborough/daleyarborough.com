@@ -264,7 +264,8 @@
         str += "a href='"+feature.properties.web+"' target='blank'>";
         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
         str += "</a>";
-        var marker = L.marker([85.29009, 27.69545]).addTo(mymap);
+        var layer = L.Marker(latlng).addTo(mymap);
+        layer.addTo(mymap);
         
         /*return L.marker(latlng).bindPopup(str);
         }});
