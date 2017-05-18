@@ -258,6 +258,7 @@
         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
         str += "</a>";
         return L.marker(latlng).bindPopup(str);
+        return L.marker(latlng);
         }});
       geojsonLayer.addTo(mymap);
       
@@ -268,6 +269,18 @@
         $("#map_coords").html(str);
       });
        
+    </script>
+    
+    <script>
+      var result = {
+      name: "jQuery",
+      language: "JavaScript",
+      score: 3.5,
+      showLog: function() {
+        
+       } 
+      };
+      console.log(result.name);
     </script>
     
 </body>
