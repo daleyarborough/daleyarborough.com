@@ -369,13 +369,13 @@
         }
       }];
     </script>
+    
     <script>
       
        $.each(results, function(i, item) {
         var newResult = "<div class='result'>" +
         "<div class='title'>" + item.name + "</div>" +
         "<div>Language: " + item.language + "</div>" +
-        "<div> Owner: " + item.owner.login + "</div>" + 
         "</div>";
         
         resultList.append(newResult);
