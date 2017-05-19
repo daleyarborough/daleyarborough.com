@@ -209,7 +209,7 @@
     <hr>
      <ul>
        <div id="results" class="border-image">
-         <button id="displayResults">Hide</button>
+         <button id="toggleButton">Hide</button>
          <div id="resultList">This is where results will go</div>
        </div>
       </ul>
@@ -331,19 +331,7 @@
     </script>
     
     <script>
-      
-      var gitHubSearch = "https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc";
-      $.get(gitHubSearch, function (r) {
-        displayResults(r.items);
-        console.log(r.items.length);
-        var displayResults = displayResults(r.items);
-      });
-      
-//       function displayResults(results) {
-        
-//       };
-  
-      
+
       var results = [{
         name: "yarbd",
       language: "JavaScript",
