@@ -209,7 +209,7 @@
     <hr>
      <ul>
        <div id="results" class="border-image">
-         <button id="toggleButton">Hide</button>
+         <button id="displayResults">Hide</button>
          <div id="resultList">This is where results will go</div>
        </div>
       </ul>
@@ -336,11 +336,12 @@
       $.get(gitHubSearch, function (r) {
         displayResults(r.items);
         console.log(r.items.length);
+        var displayResults = displayResults(r.items);
       });
       
-      function displayResults(results) {
+//       function displayResults(results) {
         
-      };
+//       };
   
       
       var results = [{
