@@ -210,19 +210,19 @@
      <ul>
        <div id="results" class="border-image">
          <button id="toggleButton">Hide</button>
-         <div id="resultss">This is where results will go</div>
+         <div id="results">This is where results will go</div>
        </div>
       </ul>
     <hr>
     
-    <div style="background-color: #91abb8;" class="col-md-6 well" class="form-control">
+<!--     <div style="background-color: #91abb8;" class="col-md-6 well" class="form-control">
     <input id="value1" type="text" value="5">
     <input id="value2" type="text" value="6">
     <button id="multiply" class="btn-danger">Multiply</button>
     <hr>
     <p id="resultss"></p>
     </div>
-    <hr>
+    <hr> -->
     
     <!-- leaflet map with The Greenhouse marker set at lat and long -->
     <div id="header" class="col-md-12">
@@ -266,30 +266,30 @@
     }
   });
   
-  var btnMultiply = document.getElementById("multiply");
-  var inputValue1 = document.getElementById("value1");
-  var inputValue2 = document.getElementById("value2");
+//   var btnMultiply = document.getElementById("multiply");
+//   var inputValue1 = document.getElementById("value1");
+//   var inputValue2 = document.getElementById("value2");
   
-  var result = document.getElementById("result")
-  btnMultiply.addEventListener('click', function(e) {
-    var val1 = inputValue1.value;
-    var val2 = inputValue2.value;
-    if (isNaN(val1) || isNaN(val2)) {
-        result.innerHTML="Whoops! At least one value is not a number!";
-        result.style.color="red";
-    } else {
-    result.innerHTML=(val1*val2);
-    result.style.color="green";
-  }});
+//   var result = document.getElementById("result")
+//   btnMultiply.addEventListener('click', function(e) {
+//     var val1 = inputValue1.value;
+//     var val2 = inputValue2.value;
+//     if (isNaN(val1) || isNaN(val2)) {
+//         result.innerHTML="Whoops! At least one value is not a number!";
+//         result.style.color="red";
+//     } else {
+//     result.innerHTML=(val1*val2);
+//     result.style.color="green";
+//   }});
   
-  function validateNumber() {
-  if(isNaN(this.value)) {
-  this.style.border="2px solid red";
-  } else {
-  this.style.border="";
-  }}
-    inputValue1.addEventListener('keyup', validateNumber);
-    inputValue2.addEventListener('keyup', validateNumber);
+//   function validateNumber() {
+//   if(isNaN(this.value)) {
+//   this.style.border="2px solid red";
+//   } else {
+//   this.style.border="";
+//   }}
+//     inputValue1.addEventListener('keyup', validateNumber);
+//     inputValue2.addEventListener('keyup', validateNumber);
 
 </script>
     
