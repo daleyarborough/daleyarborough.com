@@ -369,21 +369,7 @@
         }
       }];
     </script>
-    
-    <script>
-      
-       $.each(results, function(i, item) {
-        var newResult = "<div class='result'>" +
-        "<div class='title'>" + item.name + "</div>" +
-        "<div>Language: " + item.language + "</div>" +
-        "</div>";
-        
-        resultList.append(newResult);
-        
-      });
 
-    </script>
-    
     <script>
       $(document).ready(function() { 
       
@@ -397,6 +383,20 @@
          else toggleButton.text("Hide");
         });
       });
+    </script>
+    
+    <script>
+       resultList.empty();
+       $.each(results, function(i, item) {
+        var newResult = "<div class='result'>" +
+        "<div class='title'>" + item.name + "</div>" +
+        "<div>Language: " + item.language + "</div>" +
+        "</div>";
+        
+        resultList.append(newResult);
+        
+      });
+
     </script>
     
     <script>
