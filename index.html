@@ -166,13 +166,16 @@
               listItems.css("font-weight", "bold");
               <br/>
               listItems.filter(":first").css("font-size", 18px");
-              <small>
-              This is a good technique because it doesn't inefficiently perform a trivial task that could be easly taken care of with 
+              
+              <div class="container">
+                <small>
+                This is a good technique because it doesn't inefficiently perform a trivial task that could be easly taken care of with 
                 <br/>
                 simple css, but because the execution is against the wrapped set (var listItems = $("header nav li")), it enables 
                 <br/>
                 manipulation of the list items inside of the navbar that is inside of the header. And will query the wrapped set one line at a time.
-              </small>
+                </small>
+              </div>
             </li>
           </ul>
         </li>
