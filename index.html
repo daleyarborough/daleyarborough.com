@@ -334,8 +334,12 @@
       
       var gitHubSearch = "https://api.github.com/search/repositories?q=tetris+language:assembly&sort=stars&order=desc";
       $.get(gitHubSearch, function (r) {
-      display(r.items);
+      displayResults(r.items);
       });
+      
+      function displayResults(results) {
+        
+      };
   
       
       var results = [{
