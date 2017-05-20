@@ -344,7 +344,7 @@
     <script>
     <!-- jQuery Script -->
         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<button id='zoomTo"+"</button>";
+        var str = "<button id='zoomTo"+feature.properties.name+"</button>";
         $("#side_panel").append(str);
           
           $("#zoomToGreenHouse").click(function() {
