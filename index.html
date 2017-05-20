@@ -341,7 +341,14 @@
     
     <script>
     <!-- jQuery Script -->
-//       var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var str "<h3>"+feature.properties.name+"</h3><hr>";
+        str += "<a href='"feature.properties.web"' target='blank'>";
+        str += "<img src='img/"+feature.properties.image+"' width='200px'>";
+        str += "</a>";
+        return L.marker([36.210950, -81.677704], 11).bindPopup(str);
+        }});
+        geojsonLayer.addTo(mymap); 
 //         var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
 //         str += "' class='form-control' btn btn-primary attraction'>";
 //         str += feature.properties.name+"</button>";
@@ -351,15 +358,6 @@
         mymap.setView([36.210950, -81.677704], 17);
         });
 
-//         var str "<h3>"+feature.properties.name+"</h3><hr>";
-//         str += "<a href='"feature.properties.web"' target='blank'>";
-//         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
-//         str += "</a>";
-//         return L.marker([36.210950, -81.677704], 11).bindPopup(str);
-//         }});
-//         geojsonLayer.addTo(mymap); 
-
-   
       
        /* Event handlers last*/
       
