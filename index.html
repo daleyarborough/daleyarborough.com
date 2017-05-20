@@ -346,14 +346,20 @@
         str += "' class='form-control' btn btn-primary attraction'>";
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
+        
+         $("#zoomTo".properties.name.replace(/ /g, '')).click(function() {
+      mymap.setView([latlng.lat, latlng.lng], 17);
+    });
 
-        return L.marker([36.210950, -81.677704], 11).bindPopup(str);
+        var str "<h3>"+feature.properties.name+"</h3><hr>";
+        str += "<a href='"feature.properties.web"' target='blank'>";
+        str += "<img src='img/"+feature.properties.image+"' width='200px'>";
+        str += "</a>";
+        return L.marker([latlng.lat, latlng.lng], 11).bindPopup(str);
         }});
         geojsonLayer.addTo(mymap); 
 
-    $("#zoomTo".properties.name.replace(/ /g, '')).click(function() {
-      mymap.setView([latlng.lat, latlng.lng], 17);
-    });
+   
       
        /* Event handlers last*/
       
