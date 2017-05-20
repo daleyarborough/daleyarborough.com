@@ -341,6 +341,16 @@
     
     <script>
     <!-- jQuery Script -->
+      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
+        str += "' class='form-control' btn btn-primary attraction'>";
+        str += feature.properties.name+"</button>";
+        $("#side_panel").append(str);
+
+        return L.marker([36.210950, -81.677704], 11).bindPopup(str);
+        }});
+        geojsonLayer.addTo(mymap); 
+
     $("#zoomTo".properties.name.replace(/ /g, '')).click(function() {
       mymap.setView([latlng.lat, latlng.lng], 17);
     });
@@ -351,16 +361,6 @@
        var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
       });
-       
-      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
-        str += "' class='form-control' btn btn-primary attraction'>";
-        str += feature.properties.name+"</button>";
-        $("#side_panel").append(str);
-
-        return L.marker([36.210950, -81.677704], 11).bindPopup(str);
-        }});
-        geojsonLayer.addTo(mymap); 
 
     </script>
     
