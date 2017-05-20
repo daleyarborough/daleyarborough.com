@@ -353,10 +353,10 @@
       });
        
       var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<h3>"+feature.properties.name+"</h3><hr>";
-        str += "<a href='"+feature.properties.web+"'target='blank'>";
-        str += "<img src='img/"+feature.properties.image+"'width='150px'>";
-        str += "</a>";
+        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
+        str += "' class='form-control' btn btn-primary attraction'>";
+        str += feature.properties.name+"</button>";
+        $("#side_panel").append(str);
 
         return L.marker([36.210950, -81.677704], 11).bindPopup(str);
         }});
