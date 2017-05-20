@@ -343,31 +343,38 @@
     
     <script>
     <!-- jQuery Script -->
-      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var str = "<button id='zoomTo"+"</button>";
+        $("#side_panel").append(str);
+          
+          $("#zoomToGreenHouse").click(function() {
+        mymap.setView([36.210950, -81.677704], 17);
+        });
+          
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
         return L.marker(latlng).bindPopup(str);
         }});
         geojsonLayer.addTo(mymap); 
     </script>
     <script>
-         $("#zoomToGreenHouse").click(function() {
-        mymap.setView([36.210950, -81.677704], 17);
-        });
+//          $("#zoomToGreenHouse").click(function() {
+//         mymap.setView([36.210950, -81.677704], 17);
+//         });
 
       
        /* Event handlers last*/
       
-      mymap.on('mousemove', function(e) {
-       var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
+        mymap.on('mousemove', function(e) {
+        var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
       });
 
     </script>
     
     <script>
-      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<button id='zoomTo"+"</button>";
-        $("#side_panel").append(str);
+//         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+//         var str = "<button id='zoomTo"+"</button>";
+//         $("#side_panel").append(str);
     </script>
     
     <script>
