@@ -344,7 +344,7 @@
     <script>
     <!-- jQuery Script -->
         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<button id='zoomTo"+feature.properties.name+"</button>";
+        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '')+"</button>";
         $("#side_panel").append(str);
           
           $("#zoomToGreenHouse").click(function() {
@@ -357,11 +357,6 @@
         geojsonLayer.addTo(mymap); 
     </script>
     <script>
-//          $("#zoomToGreenHouse").click(function() {
-//         mymap.setView([36.210950, -81.677704], 17);
-//         });
-
-      
        /* Event handlers last*/
       
         mymap.on('mousemove', function(e) {
@@ -369,12 +364,6 @@
         $("#map_coords").html(str);
       });
 
-    </script>
-    
-    <script>
-//         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-//         var str = "<button id='zoomTo"+"</button>";
-//         $("#side_panel").append(str);
     </script>
     
     <script>
