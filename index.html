@@ -341,8 +341,8 @@
     
     <script>
     <!-- jQuery Script -->
-    $("#zoomToGreenHouse").click(function() {
-      mymap.setView([36.217920, -81.684790], 17);
+    $("#zoomTo".properties.name.replace(/ /g, '')).click(function() {
+      mymap.setView([latlng.lat, latlng.lng], 17);
     });
       
        /* Event handlers last*/
