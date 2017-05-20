@@ -264,7 +264,9 @@
     </div>
     <div id="side_panel" class="col-md-3">
       <h4 class="text-center">Attractions</h4>
-      <button id="zoomToGreenHouse" class="form-control btn-primary">The Greenhouse</button>
+      
+      <button id="zoomToGreenHouse".feature class="form-control btn-primary">The Greenhouse</button>
+      
     </div>
         <div id="mapdiv" class="col-md-9">
         </div>
@@ -346,10 +348,6 @@
         return L.marker(latlng).bindPopup(str);
         }});
         geojsonLayer.addTo(mymap); 
-//         var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
-//         str += "' class='form-control' btn btn-primary attraction'>";
-//         str += feature.properties.name+"</button>";
-//         $("#side_panel").append(str);
     </script>
     <script>
          $("#zoomToGreenHouse").click(function() {
@@ -364,6 +362,14 @@
         $("#map_coords").html(str);
       });
 
+    </script>
+    
+    <script>
+      var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
+        str += "' class='form-control' btn btn-primary attraction'>";
+        str += feature.properties.name+"</button>";
+        $("#side_panel").append(str);
     </script>
     
     <script>
