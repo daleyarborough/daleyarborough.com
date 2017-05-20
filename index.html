@@ -346,7 +346,7 @@
         str += "<a href='"+feature.properties.web"' target='blank'>";
         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
         str += "</a>";
-        return L.marker([36.210950, -81.677704], 11).bindPopup(str);
+        return L.marker(latlng).bindPopup(str);
         }});
         geojsonLayer.addTo(mymap); 
 //         var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
