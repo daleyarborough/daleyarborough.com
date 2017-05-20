@@ -348,16 +348,16 @@
 //         $("#side_panel").append(str);
         
          $("#zoomToGreenHouse").click(function() {
-      mymap.setView([36.210950, -81.677704], 17);
-    });
+        mymap.setView([36.210950, -81.677704], 17);
+        });
 
-        var str "<h3>"+feature.properties.name+"</h3><hr>";
-        str += "<a href='"feature.properties.web"' target='blank'>";
-        str += "<img src='img/"+feature.properties.image+"' width='200px'>";
-        str += "</a>";
-        return L.marker([36.210950, -81.677704], 11).bindPopup(str);
-        }});
-        geojsonLayer.addTo(mymap); 
+//         var str "<h3>"+feature.properties.name+"</h3><hr>";
+//         str += "<a href='"feature.properties.web"' target='blank'>";
+//         str += "<img src='img/"+feature.properties.image+"' width='200px'>";
+//         str += "</a>";
+//         return L.marker([36.210950, -81.677704], 11).bindPopup(str);
+//         }});
+//         geojsonLayer.addTo(mymap); 
 
    
       
