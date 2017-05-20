@@ -15,8 +15,8 @@
 {
   "type": "Feature",
     "properties":{
-      "id":3,
-        "name": "The Greenhouse",
+      "id":4,
+        "name": "The House",
           "image": "images/cat-pet-animal-domestic-104827.jpeg",
             "web": "http://animal-jam-clans-1.wikia.com/wiki/File:Cat-pet-animal-domestic-104827.jpeg"
     },
@@ -29,8 +29,8 @@
 {
   "type": "Feature",
     "properties":{
-      "id":3,
-        "name": "The Greenhouse",
+      "id":5,
+        "name": "The World",
           "image": "images/cat-pet-animal-domestic-104827.jpeg",
             "web": "http://animal-jam-clans-1.wikia.com/wiki/File:Cat-pet-animal-domestic-104827.jpeg"
     },
