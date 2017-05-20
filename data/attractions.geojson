@@ -10,4 +10,32 @@
         "type": "Point",
           "coordinates": [36.217920, -81.684790]
       }
+},
+
+{
+  "type": "Feature",
+    "properties":{
+      "id":3,
+        "name": "The Greenhouse",
+          "image": "images/cat-pet-animal-domestic-104827.jpeg",
+            "web": "http://animal-jam-clans-1.wikia.com/wiki/File:Cat-pet-animal-domestic-104827.jpeg"
+    },
+      "geometry":{
+        "type": "Point",
+          "coordinates": [36.217920, -81.684790]
+      }
+},
+
+{
+  "type": "Feature",
+    "properties":{
+      "id":3,
+        "name": "The Greenhouse",
+          "image": "images/cat-pet-animal-domestic-104827.jpeg",
+            "web": "http://animal-jam-clans-1.wikia.com/wiki/File:Cat-pet-animal-domestic-104827.jpeg"
+    },
+      "geometry":{
+        "type": "Point",
+          "coordinates": [36.217920, -81.684790]
+      }
 }
