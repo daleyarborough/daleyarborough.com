@@ -231,8 +231,25 @@
                 <br/>
                 Sometimes the ticket will ask for someone to be able to mirror the permissions of another individual within a group. 
                 <br/>
-                
             </li></small>
+            <li>
+              <h4>PowerShell SharePoint</h4>
+              <ul>
+                <li>Everything in SharePoint has a GUID 'Globally Unique Identifier'</li>
+                <li>Some PowerShell commands require for the user to be a local server admin and a farm admin</li>
+                <li>Use the Add-SPShellAdmin to add a user to a group
+                  <div id="container">
+                    <aside>
+                      $user = "domain\user"
+                      Add-SPShellAdmin -UserName $user
+                      Get-SPDatabase | Add-SPShell -UserName $user
+                    </aside>
+                  </div> 
+                </li>
+                <li></li>
+                <li></li> 
+              </ul>
+            </li>
             </div>
           </ul>
         </li>
