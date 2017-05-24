@@ -4,7 +4,7 @@
                                                                                                                                   
 "features": [
 { "type": "Feature", "properties": { "id": 1, "name": "Zocalo", "image": "portada.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Z%C3%B3calo" }, "geometry": { "type": "Point", "coordinates": [ 30.005470, -90.177169 ] } },
-{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Hebert's Cajun Cannon", "image": "anthropology.jpg", "web": "https:\/\/http://www.bobbyheberts.com/Pages/Menu.aspx?DeptID=0" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
+{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Hebert Cajun Cannon", "image": "anthropology.jpg", "web": "https:\/\/http://www.bobbyheberts.com/Pages/Menu.aspx?DeptID=0" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
 { "type": "Feature", "properties": { "id": 3, "name": "Chapultepec Park", "image": "chapultepec.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Chapultepec" }, "geometry": { "type": "Point", "coordinates": [ -99.186538764177541, 19.419330699425345 ] } },
 { "type": "Feature", "properties": { "id": 4, "name": "Coyoacan", "image": "coyoacan.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Coyoac%C3%A1n" }, "geometry": { "type": "Point", "coordinates": [ -99.16938652669846, 19.360599286308908 ] } },
 { "type": "Feature", "properties": { "id": 5, "name": "Xochimilco", "image": "xochimilco.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Xochimilco" }, "geometry": { "type": "Point", "coordinates": [ -99.10105213434575, 19.288539898884309 ] } },
