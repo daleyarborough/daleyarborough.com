@@ -406,6 +406,10 @@
 
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
+      
+      $("#zoomToGreenHouse").click(function() {
+          mymap.setView([19.43278, -99.13333], 17);
+        });
     
     </script>
     
