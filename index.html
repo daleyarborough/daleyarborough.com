@@ -346,54 +346,54 @@
 
     
 <script> 
-  var studentMe = {
-    firstName: "Dale",
-    lastName: "Yarborough",
-    age: 23,
-    collegeYear: "senior",
-    major: "Computer Information Systems"
-  };
-  studentMeJSON = JSON.stringify(studentMe);
-  studentMeBinary = JSON.parse(studentMeJSON);
+//   var studentMe = {
+//     firstName: "Dale",
+//     lastName: "Yarborough",
+//     age: 23,
+//     collegeYear: "senior",
+//     major: "Computer Information Systems"
+//   };
+//   studentMeJSON = JSON.stringify(studentMe);
+//   studentMeBinary = JSON.parse(studentMeJSON);
   
-  function myFunction(x) {
-    x.style.background = "azure";
-  };
+//   function myFunction(x) {
+//     x.style.background = "azure";
+//   };
   
-  document.body.children[3].children[0].addEventListener('click', function(e) {
-    if(document.body.children[2].children[0].style.display != "none") {
-       document.body.children[2].children[0].style.display = "none";
-       document.body.children[2].children[1].style.display = "block";
-    } else {
-      document.body.children[2].children[1].style.display = "none";
-      document.body.children[2].children[0].style.display = "block";
-    }
-  });
+//   document.body.children[3].children[0].addEventListener('click', function(e) {
+//     if(document.body.children[2].children[0].style.display != "none") {
+//        document.body.children[2].children[0].style.display = "none";
+//        document.body.children[2].children[1].style.display = "block";
+//     } else {
+//       document.body.children[2].children[1].style.display = "none";
+//       document.body.children[2].children[0].style.display = "block";
+//     }
+//   });
   
-  var btnMultiply = document.getElementById("multiply");
-  var inputValue1 = document.getElementById("value1");
-  var inputValue2 = document.getElementById("value2");
+//   var btnMultiply = document.getElementById("multiply");
+//   var inputValue1 = document.getElementById("value1");
+//   var inputValue2 = document.getElementById("value2");
   
-  var result = document.getElementById("result")
-  btnMultiply.addEventListener('click', function(e) {
-    var val1 = inputValue1.value;
-    var val2 = inputValue2.value;
-    if (isNaN(val1) || isNaN(val2)) {
-        result.innerHTML="Whoops! At least one value is not a number!";
-        result.style.color="red";
-    } else {
-    result.innerHTML=(val1*val2);
-    result.style.color="green";
-  }});
+//   var result = document.getElementById("result")
+//   btnMultiply.addEventListener('click', function(e) {
+//     var val1 = inputValue1.value;
+//     var val2 = inputValue2.value;
+//     if (isNaN(val1) || isNaN(val2)) {
+//         result.innerHTML="Whoops! At least one value is not a number!";
+//         result.style.color="red";
+//     } else {
+//     result.innerHTML=(val1*val2);
+//     result.style.color="green";
+//   }});
   
-  function validateNumber() {
-  if(isNaN(this.value)) {
-  this.style.border="2px solid red";
-  } else {
-  this.style.border="";
-  }}
-    inputValue1.addEventListener('keyup', validateNumber);
-    inputValue2.addEventListener('keyup', validateNumber);
+//   function validateNumber() {
+//   if(isNaN(this.value)) {
+//   this.style.border="2px solid red";
+//   } else {
+//   this.style.border="";
+//   }}
+//     inputValue1.addEventListener('keyup', validateNumber);
+//     inputValue2.addEventListener('keyup', validateNumber);
 
 </script>
     
@@ -402,13 +402,11 @@
           center: [36.210951, -81.677705], zoom: 6
         });
       
-       /*var theGreenhouse = L.marker([36.217920, -81.684790]).addTo(mymap).bindPopup("<h5 class='text-center'>The Greenhouse</h5><a href='https://www.facebook.com/pages/The-Greenhouse/136260526422575' target='blank'><img src='http://www.downtownboonenc.com/default/assets/Image/Greenhouse.jpg' width='200px' height='200px'</a>"); */
-
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
       
-      $("#zoomToGreenHouse").click(function() {
-          mymap.setView([19.43278, -99.13333], 17);
+      $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+          mymap.setView([latlng.lng, latlng.lat], 17);
         });
     
     </script>
