@@ -3,6 +3,8 @@
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                                                                   
 "features": [
-{ "type": "Feature", "properties": { "id": 1, "name": "Mulates", "image": "portada.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Z%C3%B3calo" }, "geometry": { "type": "Point", "coordinates": [ -90.064987, 29.944553 ] } }
+{ "type": "Feature", "properties": { "id": 1, "name": "Mulates", "image": "portada.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Z%C3%B3calo" }, "geometry": { "type": "Point", "coordinates": [ -90.064987, 29.944553 ] } },
+{ "type": "Feature", "properties": { "id": 1, "name": "DMV", "image": "portada.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Z%C3%B3calo" }, "geometry": { "type": "Point", "coordinates": [ -90.064987, 29.944553 ] } },
+{ "type": "Feature", "properties": { "id": 1, "name": "Bobby", "image": "portada.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Z%C3%B3calo" }, "geometry": { "type": "Point", "coordinates": [ -90.064987, 29.944553 ] } }
 ]
 }
