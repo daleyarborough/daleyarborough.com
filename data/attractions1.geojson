@@ -1,16 +1,3 @@
-/*{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                                                                 
-"features": [
-{ "type": "Feature", "properties": { "id": 1, "name": "Mulates", "image": "hi.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Chapultepec" }, "geometry": { "type": "Point", "coordinates": [ -90.064987, 29.944553 ] } },
-{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Hebert Cajun Cannon", "image": "hello.jpg", "web": "" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
-{ "type": "Feature", "properties": { "id": 3, "name": "GCDC ll Grilled Cheese Bar", "image": "xochimilco.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Xochimilco" }, "geometry": { "type": "Point", "coordinates": [ -77.040329, 38.898714 ] } }
-]
-}
-*/
-
-
 {
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
