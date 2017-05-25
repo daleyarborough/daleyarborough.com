@@ -5,7 +5,6 @@
 "features": [
 { "type": "Feature", "properties": { "id": 1, "name": "Mulates", "image": "portada.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Z%C3%B3calo" }, "geometry": { "type": "Point", "coordinates": [ -99.133409190626764, 19.432698835750049 ] } },
 { "type": "Feature", "properties": { "id": 2, "name": "Bobby Huron Cajun Cannon", "image": "anthropology.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/National_Museum_of_Anthropology_(Mexico)" }, "geometry": { "type": "Point", "coordinates": [ -99.186322350435987, 19.426167975275984 ] } },
-{ "type": "Feature", "properties": { "id": 3, "name": "GCDC ll Grilled Cheese Bar ll", "image": "chapultepec.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Chapultepec" }, "geometry": { "type": "Point", "coordinates": [ -99.186538764177541, 19.419330699425345 ] } },
-{ "type": "Feature", "properties": { "id": 7, "name": "Desierto de los leones", "image": "leones.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Desierto_de_los_Leones_National_Park" }, "geometry": { "type": "Point", "coordinates": [ -99.311104535201409, 19.312817198661758 ] } }
+{ "type": "Feature", "properties": { "id": 3, "name": "GCDC ll Grilled Cheese Bar ll", "image": "chapultepec.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Chapultepec" }, "geometry": { "type": "Point", "coordinates": [ -99.186538764177541, 19.419330699425345 ] } }
 ]
 }
