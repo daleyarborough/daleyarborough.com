@@ -419,11 +419,6 @@
           
     </script>
           <script>
-            
-          $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
-            mymap.setView([latlng.lat, latlng.lng], 17);
-        });
-          
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
         return L.marker(latlng).bindPopup(str);
         }});
@@ -436,6 +431,10 @@
         var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
       });
+      
+       $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+            mymap.setView([latlng.lat, latlng.lng], 17);
+        });
 
     </script>
     
