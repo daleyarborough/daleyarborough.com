@@ -417,8 +417,8 @@
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
           
-          $("#zoomToGreenHouse").click(function() {
-        mymap.setView([36.210950, -81.677704], 17);
+          $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+        mymap.setView([latlng.lat, latlng.lng], 17);
         });
           
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
