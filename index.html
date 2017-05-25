@@ -333,7 +333,7 @@
     <div id="side_panel" class="col-md-3">
       <h4 class="text-center">Attractions</h4>
       
-<!--       <button id="zoomToGreenHouse".feature class="form-control btn-primary">The Greenhouse</button> -->
+      <button id="zoomToGreenHouse".feature class="form-control btn-primary">The Greenhouse</button>
       
     </div>
         <div id="mapdiv" class="col-md-9">
@@ -417,8 +417,13 @@
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
           
+          //       Button Event Handler
+       $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+          mymap.setView([latlng], 17);
+        });
+          
     </script>
-          <script>
+    <script>
        
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
         return L.marker(latlng).bindPopup(str);
@@ -432,12 +437,6 @@
         var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
         });
-      
-//       Button Event Handler
-       $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
-          mymap.setView([latlng.lat, latlng.lng], 17);
-        });
-
       
     </script>
     
