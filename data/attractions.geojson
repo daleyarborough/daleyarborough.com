@@ -4,7 +4,7 @@
                                                                                                                                   
 "features": [
 { "type": "Feature", "properties": { "id": 1, "name": "One", "image": "", "web": "https:\/\/en.wikipedia.org\/wiki\/Chapultepec" }, "geometry": { "type": "Point", "coordinates": [ -99.186538764177541, 19.419330699425345 ] } },
-{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Hebert Cajun Cannon", "image": "https:\/\/digitalmarketing.blob.core.windows.net\/5113\/images\/items\/image67045.jpg", "web": "https:\/\/http://www.bobbyheberts.com/Pages/Menu.aspx?DeptID=0" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
+{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Hebert Cajun Cannon", "image": "", "web": "https:\/\/http://www.bobbyheberts.com/Pages/Menu.aspx?DeptID=0" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
 { "type": "Feature", "properties": { "id": 3, "name": "GCDC ll Grilled Cheese Bar", "image": "xochimilco.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Xochimilco" }, "geometry": { "type": "Point", "coordinates": [ -77.040329, 38.898714 ] } },
 ]
 }
