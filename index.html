@@ -417,10 +417,10 @@
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
           
-          //       Button Event Handler
-//        $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
-//           mymap.setView([latlng], 17);
-//         });
+                Button Event Handler
+       $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+          mymap.setView([-99, 29], 17);
+        });
        
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
         return L.marker(latlng).bindPopup(str);
