@@ -102,22 +102,6 @@
        <h1 class="text-center">Welcome To My Portfolio</h1>
 <!--        <h4 class="text-center" style="font-family: 'PT Serif', serif;">I am taking some time to clean up my DOM (Document Object Model) set up! Thanks for being patient!</h4> -->
      </header>
-<!--     
-      <div class="container-fluid">
-        <ul id="one">
-          <li>One</li>
-          <li>Two</li>
-        </ul>
-        <ul id="two">
-          <li>One More</li>
-          <li>Two More</li>
-        </ul>
-      </div>
-    
-      <div>
-        <button id="switch-list" class="btn-danger">Switch
-        </button> 
-      </div> -->
    
     
     <div id="table text-center">
@@ -137,28 +121,7 @@
       </tr>
     </table>
     </div>
-<!--     <section id="notMain">
-    <div class="col-md-12 form-control">
-    <form class="text-center" action="process.php" method="post">
-      <label for="fName">First Name</label>
-      <input type="text" name="fName" value="Your Name Here" onfocus="myFunction(this)">
-      <input type="date" name="birthday">
-      <input type="email" name="email" value="Your Email Address Here" onfocus="myFunction(this)">
-      <input type="tel" name="number" value="Your Number Here" onfocus="myFunction(this)">
-      
-      <select name="registered">
-        <option value="true">Yes</option>
-        <option value="false">No</option>
-      </select>
-      
-      <input type="submit" name="submit" value="Submit Button">
-      </form>
-      </div>
-      
-    </section>
-    <br/>
-    <br/>
-    <br/> -->
+
     
   <div class="container" style="background-color: #91abb8;">
     <div class="divOne" id="div1">
@@ -335,15 +298,7 @@
        </div>
       </ul>
     <hr>
-    
-<!--     <div style="background-color: #91abb8;" class="col-md-6 well" class="form-control">
-    <input id="value1" type="text" value="5">
-    <input id="value2" type="text" value="6">
-    <button id="multiply" class="btn-danger">Multiply</button>
-    <hr>
-    <p id="resultss"></p>
-    </div> -->
-    <hr>
+
     
     <!-- leaflet map with The Greenhouse marker set at lat and long -->
     <div id="header" class="col-md-12">
@@ -387,9 +342,7 @@
         str += "'class='form-control btn btn-primary attraction'>";
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
-          
-    </script>
-    <script>
+
           
 //                 Button Event Handler
        $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
@@ -414,59 +367,6 @@
         });
       
     </script>
-    <script>
-  
-//    var studentMe = {
-//  firstName: "Dale",
-//     lastName: "Yarborough",
-//      age: 23,
-//     collegeYear: "senior",
-//      major: "Computer Information Systems"
-//   };
-//   studentMeJSON = JSON.stringify(studentMe);
-//   studentMeBinary = JSON.parse(studentMeJSON);
-  
-//   function myFunction(x) {
-//     x.style.background = "azure";
-//   };
-  
-//   document.body.children[3].children[0].addEventListener('click', function(e) {
-//     if(document.body.children[2].children[0].style.display != "none") {
-//        document.body.children[2].children[0].style.display = "none";
-//        document.body.children[2].children[1].style.display = "block";
-//     } else {
-//       document.body.children[2].children[1].style.display = "none";
-//       document.body.children[2].children[0].style.display = "block";
-//     }
-//   });
-  
-//   var btnMultiply = document.getElementById("multiply");
-//   var inputValue1 = document.getElementById("value1");
-//   var inputValue2 = document.getElementById("value2");
-  
-//   var result = document.getElementById("result")
-//   btnMultiply.addEventListener('click', function(e) {
-//     var val1 = inputValue1.value;
-//     var val2 = inputValue2.value;
-//     if (isNaN(val1) || isNaN(val2)) {
-//         result.innerHTML="Whoops! At least one value is not a number!";
-//         result.style.color="red";
-//     } else {
-//     result.innerHTML=(val1*val2);
-//     result.style.color="green";
-//   }});
-  
-//   function validateNumber() {
-//   if(isNaN(this.value)) {
-//   this.style.border="2px solid red";
-//   } else {
-//   this.style.border="";
-//   }}
-//     inputValue1.addEventListener('keyup', validateNumber);
-//     inputValue2.addEventListener('keyup', validateNumber);
-
-</script>
-    
 <!--    Buffer Button  -->
      <script>
       var bufferLayer;
@@ -477,47 +377,7 @@
               $("#btnBuffer").html("Buffer");       
             }
       });
-    </script> 
-    
-  <script>
-
-      var results = [{
-        name: "yarbd",
-      language: "JavaScript",
-      score: 5.5,
-      showLog: function() {
-        
-       },
-        owner: {
-        login: "daleyarborough",
-          id: 4
-        }
-      },
-        {
-        name: "yarborough",
-      language: "JavaScript",
-      score: 5.5,
-      showLog: function() {
-        
-       },
-        owner: {
-        login: "daleyarborough",
-          id: 5
-        }
-       },
-        {
-        name: "dale",
-      language: "JavaScript",
-      score: 5.5,
-      showLog: function() {
-        
-       },
-        owner: {
-        login: "daleyarborough",
-          id: 7
-        }
-      }];
-    </script> 
+    </script>  
 
   <script>
       $(document).ready(function() { 
