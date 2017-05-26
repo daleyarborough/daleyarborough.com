@@ -365,6 +365,56 @@
 
     
 <script> 
+  
+  <script>
+       var mymap = L.map('mapdiv', {
+          center: [36.210951, -81.677705], zoom: 5
+        });
+      
+       var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+        mymap.addLayer(backgroundLayer);
+      
+      $("#zoomToGreenhouse").click(function() {
+          mymap.setView([ 19.43278, -99.13333], 17);
+        });
+    
+    </script>
+    
+    <script>
+//     <!-- jQuery Script +"</button>" made edit on line 436--> 
+        var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
+        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
+        str += "'class='form-control btn btn-primary attraction'>";
+        str += feature.properties.name+"</button>";
+        $("#side_panel").append(str);
+          
+    </script>
+    <script>
+          
+//                 Button Event Handler
+       $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+          mymap.setView([latlng.lat, latlng.lng], 17);
+        });
+      
+       $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
+          mymap.setView([latlng.lng, latlng.lat], 17);
+        });
+       
+        var str = "<h3>"+feature.properties.name+"</h3><hr>";
+        return L.marker(latlng).bindPopup(str);
+        }});
+        geojsonLayer.addTo(mymap); 
+    </script>
+    <script>
+       /* Event handlers last*/
+      
+        mymap.on('mousemove', function(e) {
+        var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
+        $("#map_coords").html(str);
+        });
+      
+    </script>
+  
 //   var studentMe = {
 //     firstName: "Dale",
 //     lastName: "Yarborough",
