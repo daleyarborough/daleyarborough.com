@@ -13,7 +13,6 @@
     
     <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    <script src="resources/leaflet.ajax.js"></script>
     <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -464,6 +463,7 @@
       var bufferLayer;
       $("#btnBuffer").click(function(){
         if ($("#btnBuffer").html == 'Buffer' {
+            var buffered attractions = turf.buffer()geojsonLayer.toGeoJson(), 1, 'miles');
               $("#btnBuffer").html("Remove Buffer");
             } else {
               $("#btnBuffer").html("Buffer");       
