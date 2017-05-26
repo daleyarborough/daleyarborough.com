@@ -443,7 +443,7 @@
           
 //                 Button Event Handler
        $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
-          mymap.setView([latlng.lng, latlng.lat], 17);
+          mymap.setView([latlng.lat, latlng.lng], 17);
         });
        
         var str = "<h3>"+feature.properties.name+"</h3><hr>";
