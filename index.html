@@ -431,9 +431,9 @@
     </script>
     
     <script>
-    <!-- jQuery Script -->
+//     <!-- jQuery Script +"</button>" made edit on line 436--> 
         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '')+"</button>";
+        var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
         str += "'class='form-control btn btn-primary attraction'>";
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
