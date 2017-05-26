@@ -319,7 +319,7 @@
         </div>
 
     
-<script> 
+
   
   <script>
        var mymap = L.map('mapdiv', {
@@ -328,6 +328,8 @@
       
        var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
         mymap.addLayer(backgroundLayer);
+   </script>
+    <script>
       
       $("#zoomToGreenhouse").click(function() {
           mymap.setView([ 19.43278, -99.13333], 17);
@@ -342,6 +344,8 @@
         str += "'class='form-control btn btn-primary attraction'>";
         str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
+    </script>
+    <script>
 
           
 //                 Button Event Handler
