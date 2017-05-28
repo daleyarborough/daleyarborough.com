@@ -19,10 +19,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
-    
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEDf_hNgx2TBoxAsHAHXTQlrzLKzO0o&callback=initialize">
-    </script>
 
     <style>
       
@@ -83,12 +79,6 @@
         height: 650px;
         background-color: salmon;
       }
-      
-      #map, #pano {
-        float: left;
-        height: 100%;
-        width: 45%;
-      }
 
       #footer {
         height: 100%;
@@ -110,8 +100,6 @@
        </ul>
      <header>
        <h1 class="text-center">Welcome To My Portfolio</h1>
-          <div id="map"></div>
-      <div id="pano"></div>
 <!--        <h4 class="text-center" style="font-family: 'PT Serif', serif;">I am taking some time to clean up my DOM (Document Object Model) set up! Thanks for being patient!</h4> -->
      </header>
    
@@ -182,10 +170,7 @@
     <div class="divFour" id="div4">
       <h2>SharePoint Engineer Intern <b>@</b> Cardinal Innovations Summer 2017</h2>
       <h5 style="font-weight:; font-family: 'PT Serif', serif;">First Week; SharePoint</h5>
-      <h3>Here is where I will be working summer '17</h3>
-      
-   
-      
+
       <ul>
         <li>Relative Selectors (ex. #notMain > form > li {font-weight: bold;}</li>
         <li>Closures: Allows access to outer variables within inner scopes:
@@ -407,25 +392,6 @@
         });
       });
     </script> 
-    
-    <script>
-      function initialize() {
-  var fenway = {lat: 35.481831, lng: -80.675848};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: fenway,
-    zoom: 14
-  });
-  var panorama = new google.maps.StreetViewPanorama(
-      document.getElementById('pano'), {
-        position: fenway,
-        pov: {
-          heading: 34,
-          pitch: 10
-        }
-      });
-  map.setStreetView(panorama);
-}
-    </script>
 </body>
 </html>
   
