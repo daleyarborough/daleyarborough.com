@@ -95,7 +95,7 @@
       #map, #pano {
       float: left;
       height: 300px;
-      width: 200px;
+      width: 250px;
       padding-top: 120px;
       padding-bottom: 120px;
      }
@@ -171,9 +171,18 @@
           <br/>
           
         </li>
+        <li>CDN: Content Delivery Network (network of servers that deliver web page to users all over the world)
+        <br/>
+        Edge Location: The location is where content will be cached
+          <br/>
+          Origin: origin of all files that CDN will distribute -- S3 bucket, EC2 instance, Route53, or Elastic Load Balancer with EC2 instances behind it
+          <br/>
+          Security and Encryption: In-Transit measures (TSL -- transport socket layer): 
+          <br/>
+          SSE-S3 (enabled when object is created; AMZN handles all keys and regularly rotates keys), SSE-KMS (Envelop Key -- added protection against unauthorized access to your keys, and logs key access), SSE-C (Customer creates and manages keys)
+        </li>
         <li></li>
-        <li>S3 (Simple Storage Service) is a place to store files in the cloud.</li>
-        <li>S3 (Simple Storage Service) is a place to store files in the cloud.</li>
+        <li></li>
       </ul>
         </article>
     </div>
@@ -215,7 +224,7 @@
       }
     </script>
       
-      <h5 style="font-weight:; font-family: 'PT Serif', serif;">First Week; SharePoint</h5>
+<!-- <hr>      <h5 style="font-weight:; font-family: 'PT Serif', serif;">First Week; SharePoint</h5> -->
       <ul>
         <li>Relative Selectors (ex. #notMain > form > li {font-weight: bold;}</li>
         <li>Closures: Allows access to outer variables within inner scopes:
