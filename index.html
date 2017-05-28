@@ -19,6 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/main.js"></script>
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initialize">
+    </script>
 
     <style>
       
@@ -80,12 +84,7 @@
         background-color: salmon;
       }
       
-/*       Google Street View Map */
-      #googleMap, #googlePano {
-       float: left;
-       height: 100%;
-       width: 45%;
-      }
+
       
       #footer {
         height: 100%;
@@ -179,6 +178,11 @@
     <div class="divFour" id="div4">
       <h2>SharePoint Engineer Intern <b>@</b> Cardinal Innovations Summer 2017</h2>
       <h5 style="font-weight:; font-family: 'PT Serif', serif;">First Week; SharePoint</h5>
+      <h3>Here is where I will be working summer '17</h3>
+      
+      <div id="map"></div>
+      <div id="pano"></div>
+      
       <ul>
         <li>Relative Selectors (ex. #notMain > form > li {font-weight: bold;}</li>
         <li>Closures: Allows access to outer variables within inner scopes:
@@ -400,6 +404,25 @@
         });
       });
     </script> 
+    
+    <script>
+      function initialize() {
+  var fenway = {lat: 35.481831, lng: -80.675848};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: fenway,
+    zoom: 14
+  });
+  var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+  map.setStreetView(panorama);
+}
+    </script>
 </body>
 </html>
   
