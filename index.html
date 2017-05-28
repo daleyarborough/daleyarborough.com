@@ -94,30 +94,6 @@
   </head>
     
   <body>
-    <div id="map">Here[0]</div>
-<div id="pano">Here</div>
-<!-- Replace the value of the key parameter with your own API key. -->
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEDf_hNgx2TBoxAsHAHXTQlrzLKzO0o&callback=initialize">
-    </script>
-    <script>
-      function initialize() {
-  var fenway = {lat: 35.481831, lng: -80.675848};
-  var map = new google.maps.Map(document.getElementById('map'), {
-    center: fenway,
-    zoom: 14
-  });
-  var panorama = new google.maps.StreetViewPanorama(
-      document.getElementById('pano'), {
-        position: fenway,
-        pov: {
-          heading: 34,
-          pitch: 10
-        }
-      });
-  map.setStreetView(panorama);
-}
-    </script>
        <ul id="menu" class="list-inline" style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333; box-shadow: 5px 5px 5px #fff695;">
          <li style="float: left;"><a style="display: block; color: #fff695; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px;" class="text-center" href="contact.asp">My Projects</a></li>
          <li style="float: right;"><a style="display: block; color: #fff695; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 25px" class="text-center" href="hello.asp">About Me</a></li>
@@ -322,6 +298,32 @@
          <div id="resultList">This is where results will go</div>
        </div>
       </ul>
+    <hr>
+    
+    <div id="map">Here[0]</div>
+<div id="pano">Here</div>
+<!-- Replace the value of the key parameter with your own API key. -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEDf_hNgx2TBoxAsHAHXTQlrzLKzO0o&callback=initialize">
+    </script>
+    <script>
+      function initialize() {
+  var fenway = {lat: 35.481831, lng: -80.675848};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: fenway,
+    zoom: 14
+  });
+  var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+  map.setStreetView(panorama);
+}
+    </script>
     <hr>
 
     
