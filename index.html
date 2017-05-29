@@ -434,7 +434,7 @@
      <script>
       var bufferLayer;
       $("#btnBuffer").click(function(){
-        if ($("#btnBuffer").html() == 'Buffer' {
+        if ($("#btnBuffer").html() == 'Buffer') {
             var bufferedAttractions = turf.buffer(geojsonLayer.toGeoJSON(), 1, 'miles');
         bufferLayer = L.geoJSON(bufferedAttractions).addTo(mymap);
               $("#btnBuffer").html("Remove Buffer");
