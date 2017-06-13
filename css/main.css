@@ -22,7 +22,7 @@ ol, ul {
 /* Header */
 
 	#header {
-		color: #ffffff;
+		color: #18BFEF;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -54,10 +54,6 @@ ol, ul {
 		z-index: 2;
 	}
 
-		#header input, #header select, #header textarea {
-			color: #ffffff;
-		}
-
 		#header a {
 			color: #ffffff;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
@@ -67,23 +63,6 @@ ol, ul {
 				border-bottom-color: transparent;
 				color: #18bfef !important;
 			}
-
-		#header strong, #header b {
-			color: #ffffff;
-		}
-
-		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
-		}
-
-		#header blockquote {
-			border-left-color: #ffffff;
-		}
-
-		#header code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-		}
 
 		#header hr {
 			border-bottom-color: #ffffff;
