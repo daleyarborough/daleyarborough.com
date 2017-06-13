@@ -1,5 +1,5 @@
-"use sctrict";
+// "use sctrict";
 
-var resultList = $("#resultList");
-resultList.text("");
+// var resultList = $("#resultList");
+// resultList.text("");
 
