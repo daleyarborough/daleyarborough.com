@@ -110,7 +110,7 @@ ol, ul {
 /* Nav */
 
 	#nav {
-		color: #fff;
+		color: #000;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -131,28 +131,8 @@ ol, ul {
 		z-index: 2;
 	}
 
-		#nav ul.divided li {
-			border-top-color: #ffffff;
-		}
-
-		#nav ul.icons li a.icon:hover:before {
-			color: #18bfef;
-		}
-
-		#nav ul.icons.alt li .icon:before {
-			box-shadow: inset 0 0 0 2px #ffffff;
-		}
-
-		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
-		}
-
-		#nav input, #nav select, #nav textarea {
-			color: #ffffff;
-		}
-
 		#nav a {
-			color: #ffffff;
+			color: #000;
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
