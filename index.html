@@ -207,33 +207,7 @@
       <h2>SharePoint Engineer Intern <b>@</b> Cardinal Innovations Summer 2017</h2>
       <h3 style="text-align: left;">Here is where I am working this summer!</h3>
       <div id="divBound">
-      <div id="map"></div>
-      <div id="pano"></div>
-      </div>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
      
-      <!-- Replace the value of the key parameter with your own API key. -->
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEDf_hNgx2TBoxAsHAHXTQlrzLKzO0o&callback=initialize">
-      </script>
-      <script>
-      function initialize() {
-      var fenway = {lat: 35.481831, lng: -80.675848};
-      var map = new google.maps.Map(document.getElementById('map'), {
-      center: fenway,
-      zoom: 14
-      });
-      var panorama = new google.maps.StreetViewPanorama(
-      document.getElementById('pano'), {
-        position: fenway,
-        pov: {
-          heading: 34,
-          pitch: 10
-        }
-      });
-      map.setStreetView(panorama);
-      }
-    </script>  
    <h5 style="font-weight:; font-family: 'PT Serif', serif;"></h5>
       <hr><hr>
       <ul>
@@ -320,7 +294,37 @@
     
     <hr>
        <div id="results" class="border-image">
-         <button id="toggleButton">Hide</button>
+         <button id="toggleButton">
+	 
+		  <div id="map"></div>
+      <div id="pano"></div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     
+      <!-- Replace the value of the key parameter with your own API key. -->
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEDf_hNgx2TBoxAsHAHXTQlrzLKzO0o&callback=initialize">
+      </script>
+      <script>
+      function initialize() {
+      var fenway = {lat: 35.481831, lng: -80.675848};
+      var map = new google.maps.Map(document.getElementById('map'), {
+      center: fenway,
+      zoom: 14
+      });
+      var panorama = new google.maps.StreetViewPanorama(
+      document.getElementById('pano'), {
+        position: fenway,
+        pov: {
+          heading: 34,
+          pitch: 10
+        }
+      });
+      map.setStreetView(panorama);
+      }
+    </script>  
+		 
+	 </button>
          <div id="resultList"></div>
        </div>
     <hr>
