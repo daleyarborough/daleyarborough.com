@@ -402,7 +402,7 @@
       var bufferLayer;
       $("#btnBuffer").click(function(){
         if ($("#btnBuffer").html() == 'Buffer') {
-            var bufferedAttractions = turf.buffer(geojsonLayer.toGeoJSON(), 1, 'miles');
+            var bufferedAttractions = turf.buffer(geojsonLayer.toGeoJSON(), 10, 'miles');
         bufferLayer = L.geoJSON(bufferedAttractions).addTo(mymap);
               $("#btnBuffer").html("Remove Buffer");
             } else {
