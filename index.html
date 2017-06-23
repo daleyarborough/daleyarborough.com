@@ -210,7 +210,10 @@
 	      and finally into the different subnets, whether it is a Private Subnet or a Public Subnet.
         <li>ONE Subnet can only span ONE Availability Zone, but Security Groupds, Route Tables, Network ACL's can span multiple Availability Zones</li>
 	      <p>You will then launch your EC2 instances inside these Subnets, whether DB or application servers in private, or web servers in public</p>
-      </ul>
+	<li>Network Access Control Lists are stateless, meaning that if you allow traffic in from port 80 (http) or 443 (https),
+		<br />
+		then you must also create a rule allowing it back out again</li>
+	    </ul>
     </div>
     
     <div class="divThree" id="div3">
