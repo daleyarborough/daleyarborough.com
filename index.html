@@ -160,7 +160,6 @@
     <div class="divTwo" id="div2">
       <h2>Amazon Web Services</h2>
       <hr><hr>
-      <article>
       <ul>
         <li>S3 (Simple Storage Service) is a place to store files in the cloud.</li>
         <li>Object based storage (flat files). Designed to widthstand failure, with high availability and durability. 
@@ -200,10 +199,14 @@
           <br/>
           SSE-KMS (Envelop Key -- added protection against unauthorized access to your keys, and logs key access), SSE-C (Customer creates and manages keys)
         </li>
-        <li></li>
+        <li>VPC | Amazon Virtual Private Cloud</li>
+	      <p>Private IP Address Range CIDR -- 10.0.0.0/16</p>
+	      <p>Three Private Address Ranges -- 10.0.0.0/0 (10/8 prefix), 172.16.0.0 (172.16/12) prefix, 192.168.0.0 (192.168/16 prefix)</p>
+	      <p>Two routes of entry -- Internet Gateway (how we connect to internet), Virtual Private Gateway (where we terminate our VPN connections)
+		      <block>Where we can have site-to-site connection between a VPC and a datacenters. </block>
+	      </p>
         <li></li>
       </ul>
-        </article>
     </div>
     
     <div class="divThree" id="div3">
