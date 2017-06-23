@@ -208,7 +208,8 @@
 	      <p></p>The router then routes to AWS Route Tables, followed by Network Access Control Lists (referred to as second line of defense),
 	      <br />
 	      and finally into the different subnets, whether it is a Private Subnet or a Public Subnet.
-        <li>ONE Subnet can only span ONE Availability Zone, but Security Groupds, Route Tables, Network ACL's can multiple Availability Zones</li>
+        <li>ONE Subnet can only span ONE Availability Zone, but Security Groupds, Route Tables, Network ACL's can span multiple Availability Zones</li>
+	      <p>You will then launch your EC2 instances inside these Subnets, whether DB or application servers in private, or web servers in public</p>
       </ul>
     </div>
     
