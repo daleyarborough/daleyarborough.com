@@ -292,10 +292,13 @@
 	<h2>Security in the Cloud consists of :</h2>
 	<br />
 	  <li>Data protection -- least privilege access system | Encryption in transit (SSL)/ encryption at rest | CloudTrail -- detailed logging of changes and file access
-	      <br />Versioning can protect against accidental overwrites or similar harm</li>
-	  <li>Privilege management</li>
-	  <li>Infrastructure protection</li>
-	  <li>Detective controls</li>
+	      <br />Versioning can protect against accidental overwrites or similar harm
+	      <br />You can encrypt your data both in transit and at rest using; ELB, EBS, S3, and RDS</li>
+	  <li>Privilege management : [Access Control Lists (ALS's), Role Based Controls, Password Management (password rotation policies)]
+	      <br />
+	      Typically securing accounts using IAM, MFA</li>
+	  <li>Infrastructure protection : Really looking at how you've configured your VPC, ports, individual IP addresses, bastion hosts, NAT instances, etc.</li>
+	  <li>Detective controls : AWS CloudTrail, AWS Config, Amazon Cloud Watch</li>
       </ul>
     </div>
     
