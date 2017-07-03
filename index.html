@@ -299,6 +299,16 @@
 	      Typically securing accounts using IAM, MFA</li>
 	  <li>Infrastructure protection : How are you using Keys and Credentials -- Really looking at how you've configured your VPC, ports, individual IP addresses, bastion hosts, NAT instances, etc.</li>
 	  <li>Detective controls : AWS CloudTrail, AWS Config, Amazon Cloud Watch</li>
+	<h2>Reliability in the Cloud consists of :</h2>
+	  <li>Foundations : IAM, VPC</li>
+	  <li>Change management : AWS CloudTrail</li>
+          <li>Failure management : CloudFormation, RDS-multiAZ (where you can force a "failover" from your primary to your secondary in the concole itself)</li>
+	<h2>Performance Efficiency Pillar :</h2>
+	  <li>Compute : Autoscaling</li>
+	  <li>Storage : EBS, S3, Glacier</li>
+          <li>Database : RDS, DynamoDB, Redshift</li>
+	  <li>Space-Time Trade-Off : CloudFront, Elasticache, Direct Connect, RDS Read Replicas - reduce latency</li>
+	
       </ul>
     </div>
     
