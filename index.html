@@ -289,7 +289,7 @@
 	      <li>Can I <em>MOVE</em> a reserved instance from one region to another? No</li>
 	      <li>In RDS what is the maximum size for a Microsoft SQL Server DB Instance with SQL Server Express edition? : 10Gb</li>
 	      <li>When creating a new security group, all <em>IN BOUND</em> traffic is allowed by default. : EBS</li>
-	<h2>Security in the Cloud consists of :</h2>
+	<h3>Security in the Cloud consists of :</h3>
 	<br />
 	  <li>Data protection -- least privilege access system | Encryption in transit (SSL)/ encryption at rest | CloudTrail -- detailed logging of changes and file access
 	      <br />Versioning can protect against accidental overwrites or similar harm
@@ -299,7 +299,7 @@
 	      Typically securing accounts using IAM, MFA</li>
 	  <li>Infrastructure protection : How are you using Keys and Credentials -- Really looking at how you've configured your VPC, ports, individual IP addresses, bastion hosts, NAT instances, etc.</li>
 	  <li>Detective controls : AWS CloudTrail, AWS Config, Amazon Cloud Watch</li>
-	<h2>Reliability in the Cloud consists of :</h2>
+	<h3>Reliability in the Cloud consists of :</h3>
 	  <li>Foundations : IAM, VPC</li>
 	  <li>Change management : AWS CloudTrail</li>
           <li>Failure management : CloudFormation, RDS-multiAZ (where you can force a "failover" from your primary to your secondary in the concole itself)</li>
@@ -308,12 +308,12 @@
 	  <li>Storage : EBS, S3, Glacier</li>
           <li>Database : RDS, DynamoDB, Redshift</li>
 	  <li>Space-Time Trade-Off : CloudFront, Elasticache, Direct Connect, RDS Read Replicas - reduce latency</li>
-	<h2>Cost Optimization :</h2>
+	<h3>Cost Optimization :</h3>
 	  <li>Matched supply and demand : Autoscaling for demand</li>
 	  <li>Cost-effective resources : EC2 (reserved) instances, AWS Trusted Advisor</li>
           <li>Expenditure awareness : CloudWatch alarms, SNS</li>
 	  <li>Optimizing over time : AWS Blog, AWS Trusted Advisor</li>
-	<h2>Operational Excellence Pillar : Includes operational practices and procedures used to manage production workloads</h2>
+	<h3>Operational Excellence Pillar : Includes operational practices and procedures used to manage production workloads</h3>
 	  <li>Preparation : </li>
 	  <li>Operation : </li>
           <li>Response : </li>
@@ -340,6 +340,18 @@
 	      alarms can be used to set thresholds for alerting and notification, and Amazon CloudWatch events can trigger notifications and automated responses
 	      <br />
 	      </p>
+	      <p>Kinesis : Used to consume big data, stream lots of social media, news, feeds, logs, etc.
+	      <br />
+	      Process large amounts of data;
+	      <br />
+	      - Redshift for business intelligence
+	      <br />
+	      -Elastic Map Reduce for Big Data Processing</p>
+	      <p>EBS backed volumes are persistent and can be detached and attached to other EC2 instances | volumes can be stopped and data persists 
+	      <br />
+	      Should be used for long term data storage, and instance storage should not be used for long term data storage
+	      <br />
+	      Instance Store backed volumes are not persistent (ephemeral)</p>
 	
       </ul>
     </div>
