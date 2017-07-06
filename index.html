@@ -361,7 +361,18 @@
 	      You can not create a VPC peering connection between VPC's in different regions.
 	      <br />
 	      VPC peering does not support transitive peering relationships</p>
-	
+	  <li>In a virtual-hosted–style URL, the bucket name is part of the domain name in the URL. For example:  
+              http://bucket.s3.amazonaws.com
+	      <br />
+              http://bucket.s3-aws-region.amazonaws.com.
+	      <br />
+	      <br />
+	      In a path-style URL, the bucket name is not part of the domain (unless you use a region-specific endpoint). For example:
+	      <br />
+              US East (N. Virginia) region endpoint, http://s3.amazonaws.com/bucket
+	      <br />
+              Region-specific endpoint, http://s3-aws-region.amazonaws.com/bucket
+	  </li>
       </ul>
     </div>
     
