@@ -4,9 +4,11 @@
                                                                                                                                   
 "features": [
 { "type": "Feature", "properties": { "id": 1, "name": "Mulates", "image": "portada.jpg", "web": "https:\/\/mulates.com\/" }, "geometry": { "type": "Point", "coordinates": [ -90.064987, 29.944553 ] } },
-{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Herbert Cajun Cannon", "image": "anthropology.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/National_Museum_of_Anthropology_(Mexico)" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
+{ "type": "Feature", "properties": { "id": 2, "name": "Bobby Herbert Cajun Cannon", "image": "anthropology.jpg", "web": "http:\/\/www.bobbyheberts.com\/Home" }, "geometry": { "type": "Point", "coordinates": [ -90.177169, 30.005470 ] } },
 { "type": "Feature", "properties": { "id": 3, "name": "GCDC ll Grilled Cheese Bar ll", "image": "chapultepec.jpg", "web": "https:\/\/en.wikipedia.org\/wiki\/Chapultepec" }, "geometry": { "type": "Point", "coordinates": [ -77.040329, 38.898714 ] } },
 { "type": "Feature", "properties": { "id": 3, "name": "Sweet Hut", "image": "chapultepec.jpg", "web": "http:\/\/www.sweethutbakery.com\/" }, "geometry": { "type": "Point", "coordinates": [ -84.383672, 33.780386 ] } }
 ]
 }
+
+
 
