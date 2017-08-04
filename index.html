@@ -578,8 +578,13 @@
           mymap.setView([latlng.lng, latlng.lat], 17);
         });
        
-        var str = "<h3>"+feature.properties.name+"</h3><hr>";
-	str += "<a>"+feature.properties.web+"</a>";
+//         var str = "<h3>"+feature.properties.name+"</h3><hr>";
+// 	str += "<a>"+feature.properties.web+"</a>";
+//         return L.marker(latlng).bindPopup(str);
+//         }});
+//         geojsonLayer.addTo(mymap); 
+	var str = "<h3>"+feature.properties.name+"</h3><hr>";
+	str += "<a href='+feature.properties.web+'"</a>";
         return L.marker(latlng).bindPopup(str);
         }});
         geojsonLayer.addTo(mymap); 
