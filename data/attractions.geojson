@@ -10,6 +10,6 @@
 { "type": "Feature", "properties": { "id": 5, "name": "Sweet Hut", "image": "chapultepec.jpg", "web": "http:\/\/www.sweethutbakery.com\/" }, "geometry": { "type": "Point", "coordinates": [ -84.383672, 33.780386 ] } }
 ]
 }
-
+ 
 
 
