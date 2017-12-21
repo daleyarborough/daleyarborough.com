@@ -169,7 +169,22 @@
 			<br/>RRS (use case: data you can generate again -- image files in one bucket, and thumbnails in another (RRS) 
 			<br/>Things charged for when using S3: Storage, Requests, Storage Management Pricing, Data Transfer Pricing, <br/>Transfer Acceleration 
 			File Gateway - for flat files, stored directly in S3 
-			Volume Gateway
+		    <ul>Volume Gateway</ul>
+		    <li>Stored Volume</li>
+		    <li>Cached Volume</li>
+		    <br/>
+		    	CDN: Content Delivery Network (network of servers that deliver web page to users all over the world) 
+			Edge Location: The location is where content will be cached 
+			Origin: origin of all files that CDN will distribute -- S3 bucket, EC2 instance, Route53, or Elastic Load Balancer with EC2 instances behind it 
+			Security and Encryption: In-Transit measures (TSL -- transport socket layer): 
+			SSE-S3 (enabled when object is created; AMZN handles all keys and regularly rotates keys), 
+			SSE-KMS (Envelop Key -- added protection against unauthorized access to your keys, and logs key access), SSE-C (Customer creates and manages keys)
+			VPC | Amazon Virtual Private Cloud
+		    <br/>
+		        Private IP Address Range CIDR -- 10.0.0.0/16
+		     	Three Private Address Ranges -- 10.0.0.0/0 (10/8 prefix), 172.16.0.0 (172.16/12) prefix, 192.168.0.0 (192.168/16 prefix)
+		    	Two routes of entry -- Internet Gateway (how we connect to internet), Virtual Private Gateway (where we terminate our VPN connections) Where we can have site-to-site connection between a VPC and a datacenters.
+
 		</p>
 		    <p>This is para two</p>
 		    
