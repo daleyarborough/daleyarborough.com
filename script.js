@@ -33,9 +33,4 @@ var app = angular.module("computer",['ngRoute'])
     $scope.services = response.data;
   });
 }])
-
-.controller('ContactCtrl', ['$scope','$http', function($scope, $http){
-  $http.get('locations.json').then(function(response){
-    $scope.locations= response.data;
-  });
 }]);
