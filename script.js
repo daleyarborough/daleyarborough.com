@@ -5,7 +5,7 @@ var app = angular.module("computer",['ngRoute'])
     when('/About',{
       templateUrl: 'about.html',
       controller: 'MainCtrl'
-    }).
+    }). 
     when('/AWS',{
       templateUrl: 'aws.html',
       controller: 'MainCtrl'
