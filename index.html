@@ -133,9 +133,9 @@ li a:hover {
        <br/><br/>
 	    
          <ul style="display: block; background-color:#ae6565;" height="auto">
-		 <li class="#divOne">AWS</li>
-		 <li class="#divTwo">Unity 3D</li>
-		 <li class="divThree">2017 Internship</li>
+		 <li><a href="#div2">AWS</a></li>
+		 <li><a href="#div3">Udemy 3D</a></li>
+		 <li><a href="#div4">SharePoint Developer Internship</a></li>
          </ul>
     </header>
     
@@ -167,16 +167,8 @@ li a:hover {
 		        <p style="padding: 5px 25px;">Private IP Address Range CIDR -- 10.0.0.0/16
 		     	Three Private Address Ranges -- 10.0.0.0/0 (10/8 prefix), 172.16.0.0 (172.16/12) prefix, 192.168.0.0 (192.168/16 prefix)
 		    	Two routes of entry -- Internet Gateway (how we connect to internet), Virtual Private Gateway (where we terminate our VPN connections) Where we can have site-to-site connection between a VPC and a datacenters.</p>
-
-		    
-		    <span>
-			    <p></p>
-		    </span>
 	    
-	    </div>  
-	    
-<!-- Amazon EC2 instances are grouped into 5 families: General Purpose, Compute Optimized, Memory Optimized, GPU, and Storage Optimized instances. General Purpose Instances have memory to CPU ratios suitable for most general purpose applications and come with fixed performance (M4 and M3 instances) or burstable performance (T2); Compute Optimized instances (C4 and C3 instances) have proportionally more CPU resources than memory (RAM) and are well suited for scale out compute-intensive applications and High Performance Computing (HPC) workloads; Memory Optimized Instances (R3 and R4 instances) offer larger memory sizes for memory-intensive applications, including database and memory caching applications; GPU Compute instances (P2) take advantage of the parallel processing capabilities of NVIDIA Tesla GPUs for high performance parallel computing; GPU Graphics instances (G2) offer high-performance 3D graphics capabilities for applications using OpenGL and DirectX; Storage Optimized Instances include I3 and I2 instances that provide very high, low latency, I/O capacity using SSD-based local instance storage for I/O-intensive applications and D2, Dense-storage instances, that provide high storage density and sequential I/O performance for data warehousing, Hadoop and other data-intensive applications. When choosing instance types, you should consider the characteristics of your application with regards to resource utilization (i.e. CPU, Memory, Storage) and select the optimal instance family and instance size. -->
-	    
+	    </div>	    
 	    
     </div>
     
@@ -192,51 +184,15 @@ li a:hover {
    
     </div>
   </div>
-<!--      END OF DIV WRAPPER -->
  </div>
-<!--       <div id="results" class="border-image">
-      <button id="toggleButton"><div id="map"></div>
-      <div id="pano">
-      </div>
-      </button>
-      </div> -->
-     
-      <!-- Replace the value of the key parameter with your own API key. -->
-      <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgbEDf_hNgx2TBoxAsHAHXTQlrzLKzO0o&callback=initialize">
-      </script>
-      <script>
-      function initialize() {
-      var fenway = {lat: 35.481831, lng: -80.675848};
-      var map = new google.maps.Map(document.getElementById('map'), {
-      center: fenway,
-      zoom: 14
-      });
-      var panorama = new google.maps.StreetViewPanorama(
-      document.getElementById('pano'), {
-        position: fenway,
-        pov: {
-          heading: 34,
-          pitch: 10
-        }
-      });
-      map.setStreetView(panorama);
-      }
-    </script> 
          <div id="resultList"></div>
        </div>
     <hr>
-
-    <!-- leaflet map with The Greenhouse marker set at lat and long -->
     <div style="background-color:#ebd8c1;">
       <h4 style="height: auto; font-size:40px;" class="text-center">Best Eateries In The US<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Food_Barnstar_Hires.png" width="50" height="50"></img></h4>
     </div>
     <div id="side_panel" class="col-md-3">
       <h4 class="text-center">Fooderies</h4>
-      
-<!--       <button id="zoomToGreenhouse" class="form-control" style="background-color: #babfcc;"></button> -->
-<!--       Buffer Button -->
-<!--       <button id="btnBuffer" class="form-control" style="color: #485778;">Mile Buffer</button> -->
     
     </div>
         <div id="mapdiv" class="col-md-9">
@@ -246,51 +202,14 @@ li a:hover {
           <h2 class="text-center">You Are Here</h2>
           <h3 id="map_coords" class="text-center">Latitude: -81.684790 Longitude: 36.217920 Zoom Level: 5</h3>
         </div>
-  
-  <script>
-       var mymap = L.map('mapdiv', {
-          center: [36.210951, -81.677705], zoom: 5
-        });
-      
-       var backgroundLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
-        mymap.addLayer(backgroundLayer);
-  
-      
-      $("#zoomToGreenhouse").click(function() {
-          mymap.setView([ 19.43278, -99.13333], 17);
-        });
-    
-    </script>
     
     <script>
-//     <!-- jQuery Script +"</button>" made edit on line 436--> 
         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
         var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
         str += "'class='form-control btn btn-primary attraction'>";
 	str += feature.properties.name+"</button>";
         $("#side_panel").append(str);
-		
-		
-// //     <!-- jQuery Script +"</button>" made edit on line 436--> 
-//         var geojsonLayer = new L.GeoJSON.AJAX('data/attractions.geojson', {pointToLayer: function(feature, latlng) {
-//         var str = "<button id='zoomTo"+feature.properties.name.replace(/ /g, '');
-//         str += "'class='form-control btn btn-primary attraction'>";
-//         str += feature.properties.name+"</button>";
-//         $("#side_panel").append(str);
-		
-		
-// 		str += feature.properties.web+"</button>";
 
-          
-// // 
-		
-		
-		
-		
-		
-		
-
-          
 //                 Button Event Handler
        $("#zoomTo"+feature.properties.name.replace(/ /g, '')).click(function() {
           mymap.setView([latlng.lat, latlng.lng], 17);
@@ -313,56 +232,6 @@ li a:hover {
         var str = "Latitude: "+e.latlng.lat.toFixed(5)+ " Longitude: "+e.latlng.lat.toFixed(5)+ " Zoom Level: "+mymap.getZoom();
         $("#map_coords").html(str);
         });
-      
-    </script>
-<!--    Buffer Button  -->
-<!--      <script>
-      var bufferLayer;
-      $("#btnBuffer").click(function(){
-        if ($("#btnBuffer").html() == 'Mile Buffer') {
-            var bufferedAttractions = turf.buffer(geojsonLayer.toGeoJSON(), 10, 'miles');
-        bufferLayer = L.geoJSON(bufferedAttractions).addTo(mymap);
-              $("#btnBuffer").html("Remove Buffer");
-            } else {
-              mymap.removeLayer(bufferLayer);
-              $("#btnBuffer").html("Mile Buffer");       
-            }
-      });
-    </script>   -->
-
-    <script>
-      $(document).ready(function() { 
-      
-//       var resultList = $("#resultList");
-//       resultList.text("This is from jQuery");
-      
-      var toggleButton = $("#toggleButton").on("click", function() {
-        resultList.toggle(500);
-        if (toggleButton.text() == "Hide") 
-          toggleButton.text("Show");
-         else toggleButton.text("Hide");
-        });
-      });
-    </script> 
-
-<script>
-	$(document).ready(function () {
-  $('div.top').click(function() {
-  $('html, body').animate({
-    scrollTop: $("divTwo").offset().top
-  }, 1000)
-}), 
-  $('div.middle').click(function (){
-    $('html, body').animate({
-      scrollTop: $("divThree").offset().top
-    }, 1000)
-  }),
-  $('div.bottom').click(function (){
-    $('html, body').animate({
-      scrollTop: $("divFour").offset().top
-    }, 1000)
-  })
-});
 </script>
 </body>
 </html>
