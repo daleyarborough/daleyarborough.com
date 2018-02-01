@@ -2,19 +2,19 @@ var app = angular.module("computer",['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider){
     $routeProvider.
-    when('/About',{
+    when('/about',{
       templateUrl: 'about.html',
       controller: 'MainCtrl'
     }). 
-    when('/AWS',{
+    when('/aws',{
       templateUrl: 'aws.html',
       controller: 'MainCtrl'
     }).
-    when('/Unity',{
+    when('/unity',{
       templateUrl: 'unity.html',
       controller: 'ServicesCtrl'
     }).
-    when('/SharePoint',{
+    when('/sharepoint',{
       templateUrl: 'sp.html',
       controller: 'ContactCtrl'
     }).
