@@ -12,11 +12,11 @@ var app = angular.module("computer",['ngRoute'])
     }).
     when('/unity',{
       templateUrl: 'unity.html',
-      controller: 'ServicesCtrl'
+      controller: 'MainCtrl'
     }).
     when('/sharepoint',{
-      templateUrl: 'sp.html',
-      controller: 'ContactCtrl'
+      templateUrl: 'sharepoint.html',
+      controller: 'MainCtrl'
     }).
     otherwise({redirectTo: '/main'})
 }])
