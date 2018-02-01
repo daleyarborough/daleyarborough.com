@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "name": "Website",
-    "description": "I love designing and architecting websites. I have two years of experience building websites for clients like EcoHome Atlanta, SuperGreen Solutions, and LiveYourLifeWellness. A lot of my inspiration comes from designer and developer Hannah Donovan, Design Engineers Jake Knapp, and Dan Saffer.",
-    "image": "https://img1.steemit.com/0x0/http://www.teenvio.com/es/wp-content/uploads/2012/07/http-https-explorer-8.gif"
+    "name": "Amazon Web Services",
+    "description": "",
+    "image": ""
   },
   {
     "id": 2,
-    "name": "Chatbot",
-    "description": "I arguably spend more time talking to chatbots than I do my peers. I have built chatbots using Visual Studios as well as NodeJS using API.AI",
-    "image": "http://www.pandasecurity.com/mediacenter/src/uploads/2015/08/bot-1024x640.jpg"
+    "name": "Unity 3D",
+    "description": "",
+    "image": ""
   },
-  {
+{
     "id": 3,
-    "name": "Virtual Reality, Augmented Reality",
-    "description": "I passed my Unity Developer Exam in 2016, and helped cofound Realty In VR, LLC. I also founded Rooibus, LLC in 2017.",
-    "image": "http://villas-in-spain.org/images/service_icon_03.png"
+    "name": "SharePoint Developer Internship (2017)",
+    "description": "",
+    "image": ""
   }
 ]
