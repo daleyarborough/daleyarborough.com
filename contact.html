@@ -1,0 +1,12 @@
+<h1><center>Contact</center></h1>
+	  <h3>Email:</h3>
+          <p>Please email me at: yarboroughd@appstate.edu</p>
+          <h3>Contact Info:</h3>
+          <div ng-repeat="location in locations">
+          <ul class="location">
+            <li>{{location.name}}</li>
+            <li>{{location.street_address}}</li>
+            <li>{{location.city}} {{location.state}}, {{location.zip}}</li>
+            <li>{{location.phone}}</li>
+          </ul>
+          </div>
