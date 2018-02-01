@@ -2,10 +2,6 @@
   {
     "id": 1,
     "name": "Dale Yarborough",
-    "street_address": "219 S. Academy St.",
-    "city": "Cary",
-    "state" : "NC",
-    "zip": "27511",
     "phone": "(919) 830-5771"
   }
 ]
