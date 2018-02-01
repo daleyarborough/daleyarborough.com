@@ -21,8 +21,9 @@
     <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
+	  
   
     <style>
         
@@ -132,13 +133,13 @@ li a:hover {
        <br/><br/>
 	    
          <ul style="display: block; background-color:#ae6565;" height="auto">
-		 <li><a href="#div2">AWS</a></li>
-		 <li><a href="#div3">Unity 3D</a></li>
-		 <li><a href="#div4">2017 Internship</a></li>
+		 <li class="#divOne">AWS</li>
+		 <li class="#divTwo">Unity 3D</li>
+		 <li class="divThree">2017 Internship</li>
          </ul>
     </header>
     
-    <div class="divTwo" id="div2">
+    <div class="divOne" id="div2">
       <h2 style="padding: 5px 15px;"><mark>Amazon Web Services</mark></h2>
 	    <hr>
 	    <hr>
@@ -179,13 +180,13 @@ li a:hover {
 	    
     </div>
     
-    <div class="divThree" id="div3">
+    <div class="divTwo" id="div3">
       <h2 style="padding: 5px 15px;"><mark>Unity 3D</mark></h2>
 	    
       <p>Certified Unity Developer, 2016 -- UniteLA</p>
     </div>
     
-    <div class="divFour" id="div4">
+    <div class="divThree" id="div4">
       <h2 style="padding: 5px 15px;"><mark>SharePoint Engineer Intern <b>@ </b>Cardinal Innovations Summer 2017</mark></h2>
       
    
@@ -343,6 +344,26 @@ li a:hover {
         });
       });
     </script> 
+
+<script>
+	$(document).ready(function () {
+  $('div.top').click(function() {
+  $('html, body').animate({
+    scrollTop: $("divTwo").offset().top
+  }, 1000)
+}), 
+  $('div.middle').click(function (){
+    $('html, body').animate({
+      scrollTop: $("divThree").offset().top
+    }, 1000)
+  }),
+  $('div.bottom').click(function (){
+    $('html, body').animate({
+      scrollTop: $("divFour").offset().top
+    }, 1000)
+  })
+});
+</script>
 </body>
 </html>
   
