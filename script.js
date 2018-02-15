@@ -3,7 +3,7 @@ var app = angular.module("computer",['ngRoute'])
 .config(['$routeProvider', function($routeProvider){
     $routeProvider.
     when('/about',{
-      templateUrl: 'about.html',
+      templateUrl: 'main.html',
       controller: 'MainCtrl'
     }).    
     when('/aws',{
