@@ -23,8 +23,8 @@ var app = angular.module("computer",['ngRoute'])
 
 
 .controller('MainCtrl', ['$scope','$http', function($scope, $http){
-  $http.get('service.json').then(function(response){
-    $scope.service = response.data;
+  $http.get('services.json').then(function(response){
+    $scope.services = response.data;
   });
 }])
 
