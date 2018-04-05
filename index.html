@@ -25,9 +25,9 @@
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
           <ul class="nav nav-justified">
-            <li><a data-toggle="tab" href="/aws">Amazon Web Services</a></li>
-            <li><a data-toggle="tab" href="/unity">Unity 3D</a></li>
-            <li><a data-toggle="tab" href="/hack">Ethical Hacking and Linux</a></li>
+            <li><a href="/aws">Amazon Web Services</a></li>
+            <li><a href="/unity">Unity 3D</a></li>
+            <li><a href="/hack">Ethical Hacking and Linux</a></li>
           </ul>
       
       <div ng-controller="MainCtrl">
@@ -37,9 +37,22 @@
       </div>
     </div>
       
-      <div class="">
+      <div class="container panel">
         <h2>How I built this website</h2>
-        <p>...</p>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#demo">One</a></li>
+          <li><a data-toggle="tab" href="demo2">demoTwo</li>
+        </ul>
+      </div>
+      
+      <div class="tab-content"> 
+        <div id="demo" class="tab-pane fade in active">
+          <h3>Demo</h3>
+          <p>...</p>
+          <div id="demoTwo" class="tab-pane fade">
+            <h3>demoTwo</h3>
+            <p>...</p>
+        </div>
       </div>
 
 
