@@ -23,14 +23,14 @@ var app = angular.module("computer",['ngRoute'])
 
 
 .controller('MainCtrl', ['$scope','$http', function($scope, $http){
-  $http.get('achievements.json').then(function(response){
-    $scope.achievements = response.data;
+  $http.get('service.json').then(function(response){
+    $scope.service = response.data;
   });
 }])
 
 .controller('ServicesCtrl', ['$scope', '$http', function($scope, $http){
-  $http.get('achievements.json').then(function(response){
-    $scope.achievements = response.data;
+  $http.get('service.json').then(function(response){
+    $scope.service = response.data;
   });
 }])
 }]);
