@@ -14,8 +14,8 @@ var app = angular.module("computer",['ngRoute'])
       templateUrl: 'unity.html',
       controller: 'MainCtrl'
     }).
-    when('/sharepoint',{
-      templateUrl: 'sharepoint.html',
+    when('/hack',{
+      templateUrl: 'hack.html',
       controller: 'MainCtrl'
     }).
     otherwise({redirectTo: '/main'})
@@ -23,14 +23,14 @@ var app = angular.module("computer",['ngRoute'])
 
 
 .controller('MainCtrl', ['$scope','$http', function($scope, $http){
-  $http.get('services.json').then(function(response){
-    $scope.services = response.data;
+  $http.get('achievements.json').then(function(response){
+    $scope.achievements = response.data;
   });
 }])
 
 .controller('ServicesCtrl', ['$scope', '$http', function($scope, $http){
-  $http.get('services.json').then(function(response){
-    $scope.services = response.data;
+  $http.get('achievements.json').then(function(response){
+    $scope.achievements = response.data;
   });
 }])
 }]);
