@@ -25,14 +25,10 @@
            Multiple lines will require custom code not provided by Bootstrap. -->
       <div class="masthead">
           <ul class="nav nav-justified">
-            <li><a href="/aws">Amazon Web Services</a></li>
-            <li><a href="/unity">Unity 3D</a></li>
-            <li><a href="/hack">Ethical Hacking and Linux</a></li>
+            <li><a data-toggle="tab" href="/aws">Amazon Web Services</a></li>
+            <li><a data-toggle="tab" href="/unity">Unity 3D</a></li>
+            <li><a data-toggle="tab" href="/hack">Ethical Hacking and Linux</a></li>
           </ul>
-      </div> 
-        
-      <div id="twitter">
-      </div>
       
       <div ng-controller="MainCtrl">
         <div ng-view>
@@ -40,6 +36,11 @@
         
       </div>
     </div>
+      
+      <div class="">
+        <h2>How I built this website</h2>
+        <p>...</p>
+      </div>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
