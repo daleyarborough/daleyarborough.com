@@ -28,9 +28,14 @@ var app = angular.module("computer",['ngRoute'])
   });
 }])
 
-.controller('ServicesCtrl', ['$scope', '$http', function($scope, $http){
-  $http.get('service.json').then(function(response){
-    $scope.service = response.data;
+.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
+  $http.get('services.json').then(function(response){
+    $scope.services = response.data;
   });
 }])
+
+.controller('MainCtrl', ['$scope','$http', function($scope, $http){
+  $http.get('locations.json').then(function(response){
+    $scope.locations= response.data;
+  });
 }]);
