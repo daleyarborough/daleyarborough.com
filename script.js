@@ -2,7 +2,7 @@ var app = angular.module("computer",['ngRoute'])
   
 .config(['$routeProvider', function($routeProvider){
     $routeProvider.
-    when('/about',{
+    when('/main',{
       templateUrl: 'main.html',
       controller: 'MainCtrl'
     }).    
