@@ -3,18 +3,30 @@
     "id": 1, 
     "name": "Amazon Web Services Developer - Associate",
     "description": "Amazon Web Services",
-    "date": ""
+    "date": "2018"
   },
   { 
     "id": 2,
     "name": "Unity3D Developer Certification",
     "description": "Unity3D",
-    "date": ""
+    "date": "2016"
   },
 {
     "id": 3,
-    "name": "",
+    "name": "Pitch Your Idea Competition, Third Place",
     "description": "",
-    "date": ""
+    "date": "2017"
+  },
+{
+    "id": 4,
+    "name": "Fast Track Venture Fund Recipient",
+    "description": "",
+    "date": "2017"
+  },
+{
+    "id": 5,
+    "name": "Office of Student Research Grant",
+    "description": "",
+    "date": "2017"
   }
 ]
