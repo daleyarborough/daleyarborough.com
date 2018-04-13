@@ -10,8 +10,8 @@ var app = angular.module("computer",['ngRoute'])
       templateUrl: 'aws.html',
       controller: 'MainCtrl'
     }).
-    when('/unity',{
-      templateUrl: 'unity.html',
+    when('/game',{
+      templateUrl: 'game.html',
       controller: 'MainCtrl'
     }).
     when('/hack',{
