@@ -1,7 +1,7 @@
 {
 "companyName": "DefaultCompany",
 "productName": "New Unity Project",
-"dataUrl": "Desktop.data.unityweb",
+"dataUrl": "https://s3.amazonaws.com/portfolio-unity-game/Desktop.data.unityweb",
 "asmCodeUrl": "Desktop.asm.code.unityweb",
 "asmMemoryUrl": "Desktop.asm.memory.unityweb",
 "asmFrameworkUrl": "Desktop.asm.framework.unityweb",
