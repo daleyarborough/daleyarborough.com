@@ -1,3 +1,5 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
 var app = angular.module("computer",['ngRoute'])
    
 .config(['$routeProvider', function($routeProvider){
