@@ -6,16 +6,16 @@ var app = angular.module("computer",['ngRoute'])
       templateUrl: 'main.html',
       controller: 'MainCtrl'
     }).    
-    when('/aws',{
-      templateUrl: 'aws.html',
+    when('/education',{
+      templateUrl: 'education.html',
       controller: 'MainCtrl'
     }).
-    when('/game',{
-      templateUrl: 'game.html',
+    when('/projects',{
+      templateUrl: 'projects.html',
       controller: 'MainCtrl'
     }).
-    when('/hack',{
-      templateUrl: 'hack.html',
+    when('/favorites',{
+      templateUrl: 'favorites.html',
       controller: 'MainCtrl'
     }).
     otherwise({redirectTo: '/main'})
